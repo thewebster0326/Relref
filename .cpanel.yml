@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - export REPO=/home/relref/repositories/Relref
+    - cd $REPO && npm install --omit=dev
+    - cd $REPO && npm run build
+    - mkdir -p $REPO/.next/standalone/.next
+    - cp -R $REPO/public $REPO/.next/standalone/public
+    - cp -R $REPO/.next/static $REPO/.next/standalone/.next/static
+    - mkdir -p $REPO/tmp
+    - touch $REPO/tmp/restart.txt
