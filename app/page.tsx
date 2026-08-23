@@ -1,107 +1,192 @@
-import Image from "next/image";
-
-const CONTACT = {
-  mobile: "083 538 5106",
-  durban: "031 201 7672",
-  queensburgh: "031 464 2281",
-  email: "iyernolan@gmail.com",
-};
+import Link from "next/link";
+import FrostCanvas from "@/components/FrostCanvas";
+import Timeline from "@/components/Timeline";
+import ChipRow from "@/components/ChipRow";
+import ServiceCard from "@/components/ServiceCard";
+import ReviewsSection from "@/components/ReviewsSection";
+import { site, services, brands, clients, blogPosts } from "@/lib/content";
 
 export default function Home() {
+  const latestPosts = blogPosts.slice(-3).reverse();
+
   return (
-    <div className="relative flex flex-1 flex-col items-center justify-center overflow-hidden px-6 py-16">
-      {/* Soft ice-blue glow, brand accent rather than a generic gradient */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-40 left-1/2 h-[560px] w-[560px] -translate-x-1/2 rounded-full bg-ice/15 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute bottom-[-220px] right-[-160px] h-[420px] w-[420px] rounded-full bg-rr-red/10 blur-3xl"
-      />
-
-      <main className="relative z-10 flex w-full max-w-2xl flex-col items-center text-center">
-        <Image
-          src="/images/logo/Reliable-Refrigeration-logo.png"
-          alt="Reliable Refrigeration"
-          width={520}
-          height={130}
-          priority
-          className="h-auto w-full max-w-[360px] sm:max-w-[440px]"
-        />
-
-        <span className="mt-10 inline-flex items-center gap-2 rounded-full border border-ice/30 bg-ice/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-ice-dark">
-          New website on the way
-        </span>
-
-        <h1 className="mt-6 text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
-          Keeping Cool Under Every Circumstance
-        </h1>
-
-        <p className="mt-5 max-w-xl text-balance text-base leading-7 text-foreground/70 sm:text-lg">
-          Since 2004, Reliable Refrigeration has been Durban&apos;s trusted name in
-          domestic and commercial refrigeration — repairs, cold rooms, freezer
-          rooms and refrigeration sales, backed by 30+ years of combined
-          experience. We&apos;re giving our website a refresh. In the meantime,
-          we&apos;re still very much open for business.
-        </p>
-
-        <div className="mt-10 flex w-full flex-col items-center gap-4 rounded-2xl border border-foreground/10 bg-white/70 p-6 shadow-sm backdrop-blur sm:flex-row sm:justify-center sm:gap-8">
-          <ContactItem
-            label="Mobile"
-            value={CONTACT.mobile}
-            href={`tel:${CONTACT.mobile.replace(/\s/g, "")}`}
-          />
-          <Divider />
-          <ContactItem
-            label="Durban"
-            value={CONTACT.durban}
-            href={`tel:${CONTACT.durban.replace(/\s/g, "")}`}
-          />
-          <Divider />
-          <ContactItem
-            label="Queensburgh"
-            value={CONTACT.queensburgh}
-            href={`tel:${CONTACT.queensburgh.replace(/\s/g, "")}`}
-          />
+    <>
+      <section className="relative overflow-hidden border-b border-line">
+        <FrostCanvas />
+        <div className="relative z-10 mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+          <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+            Durban &amp; Queensburgh
+          </p>
+          <h1 className="mt-5 max-w-xl text-balance font-display text-4xl font-bold leading-[1.05] sm:text-6xl">
+            Keeping cool <span className="font-normal text-mist">under every circumstance.</span>
+          </h1>
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-mist">
+            A cold chain that hasn&rsquo;t broken since 2004 — domestic and commercial
+            refrigeration, repaired on-site by technicians who treat every compressor
+            like it&rsquo;s the last one.
+          </p>
+          <div className="mt-9 flex flex-wrap gap-3.5">
+            <a
+              href={`tel:${site.phones.mobile.replace(/\s/g, "")}`}
+              className="rounded-full bg-red px-6 py-3.5 font-sans text-sm font-semibold text-white transition-opacity hover:opacity-90"
+            >
+              Call {site.phones.mobile}
+            </a>
+            <Link
+              href="/services"
+              className="rounded-full border border-line px-6 py-3.5 font-sans text-sm font-semibold text-frost transition-colors hover:border-ice hover:text-ice"
+            >
+              What we service
+            </Link>
+          </div>
         </div>
+      </section>
 
-        <a
-          href={`mailto:${CONTACT.email}`}
-          className="mt-6 text-sm font-medium text-ice-dark underline decoration-ice/40 underline-offset-4 transition-colors hover:text-rr-red"
-        >
-          {CONTACT.email}
-        </a>
-      </main>
+      <section className="border-b border-line">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-px overflow-hidden rounded-none border-line bg-line sm:grid-cols-4">
+          {[
+            { label: "Established", value: "2004" },
+            { label: "Experience", value: "30+ yrs" },
+            { label: "Coverage", value: "2 branches" },
+            { label: "Cover", value: "Fully insured" },
+          ].map((f) => (
+            <div key={f.label} className="bg-deep px-6 py-8 text-center sm:text-left">
+              <p className="font-mono text-[0.7rem] uppercase tracking-wider text-mist">
+                {f.label}
+              </p>
+              <p className="mt-1.5 font-display text-xl font-semibold text-frost">{f.value}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <footer className="relative z-10 mt-16 text-xs text-foreground/40">
-        Reliable Refrigeration &copy; {new Date().getFullYear()} &mdash; All Rights Reserved
-      </footer>
-    </div>
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+              On-site, most areas
+            </p>
+            <h2 className="mt-2.5 font-display text-3xl font-semibold sm:text-4xl">
+              What we service
+            </h2>
+          </div>
+          <Link href="/services" className="text-sm font-semibold text-ice hover:text-frost">
+            All services &rarr;
+          </Link>
+        </div>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {services.map((s) => (
+            <ServiceCard key={s.slug} service={s} />
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-line bg-deep-2/40">
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 sm:py-24 md:grid-cols-2">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+              Cold chain, unbroken
+            </p>
+            <h2 className="mt-2.5 font-display text-3xl font-semibold sm:text-4xl">
+              Since 2004
+            </h2>
+            <p className="mt-4 max-w-md text-mist">
+              Owner-operated, hands-on, every job — with factory-backed warranties and
+              fully equipped vehicles on every call-out.
+            </p>
+          </div>
+          <Timeline />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+        <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+          Parts &amp; repairs
+        </p>
+        <h2 className="mt-2.5 font-display text-2xl font-semibold sm:text-3xl">
+          Brands we service
+        </h2>
+        <div className="mt-6">
+          <ChipRow items={brands} />
+        </div>
+      </section>
+
+      <ReviewsSection />
+
+      <section className="border-y border-line bg-deep-2/40">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+          <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+            Around Durban
+          </p>
+          <h2 className="mt-2.5 font-display text-2xl font-semibold sm:text-3xl">
+            Some of our clients
+          </h2>
+          <div className="mt-6">
+            <ChipRow items={clients} />
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+              From the workshop
+            </p>
+            <h2 className="mt-2.5 font-display text-3xl font-semibold sm:text-4xl">
+              Latest from the blog
+            </h2>
+          </div>
+          <Link href="/blog" className="text-sm font-semibold text-ice hover:text-frost">
+            All posts &rarr;
+          </Link>
+        </div>
+        <div className="mt-10 grid gap-5 sm:grid-cols-3">
+          {latestPosts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="flex flex-col rounded-2xl border border-line bg-deep-2/50 p-6 transition-colors hover:border-ice"
+            >
+              <p className="font-mono text-xs text-mist">
+                {new Date(post.date).toLocaleDateString("en-ZA", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </p>
+              <h3 className="mt-3 font-display text-lg font-semibold leading-snug">
+                {post.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-mist">{post.excerpt}</p>
+              <span className="mt-4 font-mono text-xs uppercase tracking-wider text-ice">
+                Read &rarr;
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-t border-line">
+        <div className="relative mx-auto max-w-6xl overflow-hidden rounded-none px-5 py-16 sm:px-8 sm:py-24">
+          <div className="relative z-10 flex flex-col items-start gap-6 rounded-2xl border border-line bg-gradient-to-br from-deep-2 to-deep-3 p-8 sm:flex-row sm:items-center sm:justify-between sm:p-12">
+            <div>
+              <h2 className="font-display text-2xl font-semibold sm:text-3xl">
+                Fridge down? We&rsquo;re on call.
+              </h2>
+              <p className="mt-2 max-w-md text-mist">
+                Mon&ndash;Sat, across Durban and Queensburgh.
+              </p>
+            </div>
+            <a
+              href={`tel:${site.phones.mobile.replace(/\s/g, "")}`}
+              className="whitespace-nowrap rounded-full bg-red px-7 py-3.5 font-sans text-sm font-semibold text-white transition-opacity hover:opacity-90"
+            >
+              Call {site.phones.mobile}
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
   );
-}
-
-function ContactItem({
-  label,
-  value,
-  href,
-}: {
-  label: string;
-  value: string;
-  href: string;
-}) {
-  return (
-    <a href={href} className="group flex flex-col items-center">
-      <span className="text-[11px] font-semibold uppercase tracking-wider text-foreground/40">
-        {label}
-      </span>
-      <span className="mt-1 text-base font-semibold text-foreground transition-colors group-hover:text-ice-dark">
-        {value}
-      </span>
-    </a>
-  );
-}
-
-function Divider() {
-  return <span className="hidden h-8 w-px bg-foreground/10 sm:block" />;
 }

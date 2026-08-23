@@ -1,0 +1,48 @@
+import Link from "next/link";
+import { site } from "@/lib/content";
+
+export default function Footer() {
+  return (
+    <footer className="relative z-10 border-t border-line">
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.3fr_1fr_1fr]">
+        <div>
+          <span className="font-display text-lg font-semibold">
+            Reliable <span className="text-ice">Refrigeration</span>
+          </span>
+          <p className="mt-3 max-w-sm text-sm leading-relaxed text-mist">
+            Domestic and commercial refrigeration in Durban and Queensburgh, on-site,
+            since 2004.
+          </p>
+        </div>
+
+        <div>
+          <p className="font-mono text-xs uppercase tracking-wider text-ice">Site</p>
+          <nav className="mt-4 flex flex-col gap-2.5 text-sm text-mist">
+            <Link href="/about" className="hover:text-frost">About</Link>
+            <Link href="/services" className="hover:text-frost">Services</Link>
+            <Link href="/blog" className="hover:text-frost">Blog</Link>
+            <Link href="/contact" className="hover:text-frost">Contact</Link>
+          </nav>
+        </div>
+
+        <div>
+          <p className="font-mono text-xs uppercase tracking-wider text-ice">Get in touch</p>
+          <div className="mt-4 flex flex-col gap-2.5 text-sm text-mist">
+            <a href={`tel:${site.phones.mobile.replace(/\s/g, "")}`} className="hover:text-frost">
+              {site.phones.mobile}
+            </a>
+            <a href={`mailto:${site.email}`} className="hover:text-frost">
+              {site.email}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="border-t border-line px-5 py-6 sm:px-8">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 font-mono text-xs text-mist">
+          <span>&copy; {new Date().getFullYear()} Reliable Refrigeration</span>
+          <span>Durban &amp; Queensburgh, South Africa</span>
+        </div>
+      </div>
+    </footer>
+  );
+}

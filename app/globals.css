@@ -1,25 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7fafc;
-  --foreground: #3a3b3e;
-  --ice: #29abe2;
-  --ice-dark: #1682b3;
-  --rr-red: #ee1c25;
+  --deep: #0a1b2b;
+  --deep-2: #122a3d;
+  --deep-3: #173347;
+  --frost: #cfeffb;
+  --ice: #39a6de;
+  --ice-dim: #1c6f96;
+  --red: #e23b45;
+  --mist: #7997a8;
+  --line: rgba(207, 239, 251, 0.14);
+  --background: var(--deep);
+  --foreground: var(--frost);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-deep: var(--deep);
+  --color-deep-2: var(--deep-2);
+  --color-deep-3: var(--deep-3);
+  --color-frost: var(--frost);
   --color-ice: var(--ice);
-  --color-ice-dark: var(--ice-dark);
-  --color-rr-red: var(--rr-red);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ice-dim: var(--ice-dim);
+  --color-red: var(--red);
+  --color-mist: var(--mist);
+  --color-line: var(--line);
+  --font-display: var(--font-sora);
+  --font-sans: var(--font-public-sans);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--ice);
+  color: var(--deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ice);
+  outline-offset: 3px;
 }
