@@ -55,3 +55,12 @@ body {
   outline: 2px solid var(--ice);
   outline-offset: 3px;
 }
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
