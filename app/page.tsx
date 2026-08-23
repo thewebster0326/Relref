@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import FrostCanvas from "@/components/FrostCanvas";
 import Timeline from "@/components/Timeline";
@@ -13,31 +14,44 @@ export default function Home() {
     <>
       <section className="relative overflow-hidden border-b border-line">
         <FrostCanvas />
-        <div className="relative z-10 mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-          <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
-            Durban &amp; Queensburgh
-          </p>
-          <h1 className="mt-5 max-w-xl text-balance font-display text-4xl font-bold leading-[1.05] sm:text-6xl">
-            Keeping cool <span className="font-normal text-mist">under every circumstance.</span>
-          </h1>
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-mist">
-            A cold chain that hasn&rsquo;t broken since 2004 — domestic and commercial
-            refrigeration, repaired on-site by technicians who treat every compressor
-            like it&rsquo;s the last one.
-          </p>
-          <div className="mt-9 flex flex-wrap gap-3.5">
-            <a
-              href={`tel:${site.phones.mobile.replace(/\s/g, "")}`}
-              className="rounded-full bg-red px-6 py-3.5 font-sans text-sm font-semibold text-white transition-opacity hover:opacity-90"
-            >
-              Call {site.phones.mobile}
-            </a>
-            <Link
-              href="/services"
-              className="rounded-full border border-line px-6 py-3.5 font-sans text-sm font-semibold text-frost transition-colors hover:border-ice hover:text-ice"
-            >
-              What we service
-            </Link>
+        <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+              Durban &amp; Queensburgh
+            </p>
+            <h1 className="mt-5 text-balance font-display text-4xl font-bold leading-[1.05] sm:text-6xl">
+              Keeping cool <span className="font-normal text-mist">under every circumstance.</span>
+            </h1>
+            <p className="mt-6 max-w-lg text-lg leading-relaxed text-mist">
+              A cold chain that hasn&rsquo;t broken since 2004 — domestic and commercial
+              refrigeration, repaired on-site by technicians who treat every compressor
+              like it&rsquo;s the last one.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3.5">
+              <a
+                href={`tel:${site.phones.mobile.replace(/\s/g, "")}`}
+                className="rounded-full bg-red px-6 py-3.5 font-sans text-sm font-semibold text-white transition-opacity hover:opacity-90"
+              >
+                Call {site.phones.mobile}
+              </a>
+              <Link
+                href="/services"
+                className="rounded-full border border-line px-6 py-3.5 font-sans text-sm font-semibold text-frost transition-colors hover:border-ice hover:text-ice"
+              >
+                What we service
+              </Link>
+            </div>
+          </div>
+          <div className="relative hidden aspect-[4/5] overflow-hidden rounded-2xl border border-line lg:block">
+            <Image
+              src="/images/gallery/coldroom.jpg"
+              alt="A custom-built cold room installed by Reliable Refrigeration"
+              fill
+              sizes="(min-width: 1024px) 40vw, 0px"
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-deep/70 via-transparent to-deep/10" />
           </div>
         </div>
       </section>

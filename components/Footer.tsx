@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/content";
 
@@ -6,9 +7,13 @@ export default function Footer() {
     <footer className="relative z-10 border-t border-line">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <span className="font-display text-lg font-semibold">
-            Reliable <span className="text-ice">Refrigeration</span>
-          </span>
+          <Image
+            src="/images/logo/Reliable-Refrigeration-logo.png"
+            alt="Reliable Refrigeration"
+            width={1596}
+            height={401}
+            className="h-8 w-auto"
+          />
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-mist">
             Domestic and commercial refrigeration in Durban and Queensburgh, on-site,
             since 2004.

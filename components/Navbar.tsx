@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { site } from "@/lib/content";
@@ -17,18 +18,15 @@ export default function Navbar() {
   return (
     <header className="relative z-20 border-b border-line">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-5 sm:px-8">
-        <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path
-              d="M12 2v20M12 2 8 6M12 2l4 4M12 22l-4-4M12 22l4-4M2 12h20M2 12l4-4M2 12l4 4M22 12l-4-4M22 12l-4 4"
-              stroke="var(--ice)"
-              strokeWidth="1.1"
-              strokeLinecap="round"
-            />
-          </svg>
-          <span className="font-display text-lg font-semibold tracking-tight">
-            Reliable <span className="text-ice">Refrigeration</span>
-          </span>
+        <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
+          <Image
+            src="/images/logo/Reliable-Refrigeration-logo.png"
+            alt="Reliable Refrigeration"
+            width={1596}
+            height={401}
+            priority
+            className="h-8 w-auto sm:h-9"
+          />
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
