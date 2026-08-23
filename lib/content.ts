@@ -7,8 +7,13 @@ export const site = {
     durban: "031 201 7672",
     queensburgh: "031 464 2281",
   },
-  email: "iyernolan@gmail.com",
+  email: "info@relref.co.za",
   googleReviewsUrl: "https://share.google/hqPOuoqn848mp6M8z",
+};
+
+export const designer = {
+  name: "The Webster",
+  url: "https://thewebster.co.za",
 };
 
 export type Service = {
@@ -90,17 +95,6 @@ export const services: Service[] = [
       "Honest advice on repair vs. replace",
     ],
   },
-];
-
-export const brands = [
-  "Staycold",
-  "Samsung",
-  "LG",
-  "KIC",
-  "Fridgestar",
-  "Defy",
-  "Cool Master",
-  "Concord",
 ];
 
 export const clients = [

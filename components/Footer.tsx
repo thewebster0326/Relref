@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { site } from "@/lib/content";
+import { site, designer } from "@/lib/content";
 
 export default function Footer() {
   return (
@@ -43,9 +43,20 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-line px-5 py-6 sm:px-8">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 font-mono text-xs text-mist">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 font-mono text-xs text-mist">
           <span>&copy; {new Date().getFullYear()} Reliable Refrigeration</span>
           <span>Durban &amp; Queensburgh, South Africa</span>
+          <span>
+            Website by{" "}
+            <a
+              href={designer.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ice hover:text-frost"
+            >
+              {designer.name}
+            </a>
+          </span>
         </div>
       </div>
     </footer>

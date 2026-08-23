@@ -3,9 +3,10 @@ import Link from "next/link";
 import FrostCanvas from "@/components/FrostCanvas";
 import Timeline from "@/components/Timeline";
 import ChipRow from "@/components/ChipRow";
+import BrandLogos from "@/components/BrandLogos";
 import ServiceCard from "@/components/ServiceCard";
 import ReviewsSection from "@/components/ReviewsSection";
-import { site, services, brands, clients, blogPosts } from "@/lib/content";
+import { site, services, clients, blogPosts } from "@/lib/content";
 
 export default function Home() {
   const latestPosts = blogPosts.slice(-3).reverse();
@@ -121,7 +122,7 @@ export default function Home() {
           Brands we service
         </h2>
         <div className="mt-6">
-          <ChipRow items={brands} />
+          <BrandLogos />
         </div>
       </section>
 

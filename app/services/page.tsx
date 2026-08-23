@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
-import ChipRow from "@/components/ChipRow";
-import { services, brands, site } from "@/lib/content";
+import BrandLogos from "@/components/BrandLogos";
+import { services, site } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Services | Reliable Refrigeration",
@@ -45,7 +45,7 @@ export default function ServicesPage() {
             Brands we service
           </h2>
           <div className="mt-6">
-            <ChipRow items={brands} />
+            <BrandLogos />
           </div>
         </div>
       </section>
