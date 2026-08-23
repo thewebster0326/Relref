@@ -112,9 +112,46 @@ export type Review = {
   rating: number;
 };
 
-// Real Google review quotes go here once supplied — see googleReviewsUrl above
-// for the live profile in the meantime.
-export const reviews: Review[] = [];
+// Real quotes from Google — copied over manually since Google blocks
+// automated access. See googleReviewsUrl above for the live profile.
+export const reviews: Review[] = [
+  {
+    quote:
+      "Nolan and Reliable Refrigeration give fantastic service at reasonable rates. They are honest, explain problems and give fair estimates. They give good advice and if a unit is not viable to repair they'll tell you. I highly recommend their services.",
+    author: "Love Local Live Music",
+    rating: 5,
+  },
+  {
+    quote:
+      "Very reliable co. The technician has a vast knowledge on fridge repair. Ive had 3 guys repair my fridge and i lost money. Nolan and his team i will recommend any day.",
+    author: "Carl Pretorius",
+    rating: 5,
+  },
+  {
+    quote:
+      "I am very happy with the service received. The quick response to my call, the honest no nonsense discussion regards the assessment of my problem and the turn around time to fix it. I would highly recommend using Reliable Refrigeration.",
+    author: "Carol Robinson",
+    rating: 5,
+  },
+  {
+    quote:
+      "Nolan and team are excellent in what they do. Always reliable and affordable. Using them for close to 17 years. Also services special needs school Open Air School. Trustworthy and efficient.",
+    author: "Roshan Sewsunker",
+    rating: 5,
+  },
+  {
+    quote:
+      "Very responsive compared to others I contacted. Was very quick to arrive at my property to assess the fridge. Extremely professional and offered different options for repair. Communicated times of arrival and expected turnarounds very well. I would highly recommend Nolan.",
+    author: "Vaughn Reyneke",
+    rating: 5,
+  },
+  {
+    quote:
+      "Reliable Refrigeration provided excellent service from start to finish. True to their name, they were incredibly reliable and right there when I needed them. The entire process was smooth and highly efficient. If you want a team that actually shows up and delivers top-notch work, look no further. Highly recommended!",
+    author: "Vivek Bhagwan",
+    rating: 5,
+  },
+];
 
 export type BlogPost = {
   slug: string;
