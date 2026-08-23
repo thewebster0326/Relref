@@ -97,16 +97,6 @@ export const services: Service[] = [
   },
 ];
 
-export const clients = [
-  "BP",
-  "Engen",
-  "Glenwood Bakery",
-  "Lupa Osteria",
-  "Northlands Bowling Club",
-  "Open Air School",
-  "The Coffee Tree",
-];
-
 export const timeline = [
   { year: "2004", desc: "Founded in Durban, owner-operated from day one." },
   { year: "Since", desc: "30+ years combined technician experience across the team." },
