@@ -23,9 +23,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Reliable Refrigeration | Durban & Queensburgh",
+  title: "Reliable Refrigeration | Fridge & Commercial Refrigeration Repairs in Durban",
   description:
-    "Reliable Refrigeration has been Durban's trusted refrigeration specialist since 2004 — domestic and commercial repairs, cold rooms, freezer rooms and refrigeration sales, on-site.",
+    "Reliable Refrigeration has been Durban's trusted refrigeration specialist since 2004 — domestic and commercial repairs, cold rooms, freezer rooms, maintenance and refrigeration sales, on-site across Durban, Umhlanga, Hillcrest, Kloof and the surrounding area.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

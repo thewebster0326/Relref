@@ -1,19 +1,46 @@
 export const site = {
   name: "Reliable Refrigeration",
+  heroHeadline: "Expert Fridge & Commercial Refrigeration Repairs in Durban",
   tagline: "Keeping cool under every circumstance",
   founded: 2004,
   phones: {
     mobile: "083 538 5106",
-    durban: "031 201 7672",
-    queensburgh: "031 464 2281",
+    office: "031 201 7672",
+    alternate: "031 464 2281",
   },
   email: "info@relref.co.za",
   googleReviewsUrl: "https://share.google/hqPOuoqn848mp6M8z",
 };
 
+export const serviceAreas = [
+  "Durban",
+  "Durban North",
+  "Umhlanga",
+  "La Lucia",
+  "Kloof",
+  "Hillcrest",
+  "Westville",
+  "Pinetown",
+  "Queensburgh",
+  "Malvern",
+  "Berea",
+  "Glenwood",
+  "Bluff",
+  "Chatsworth",
+  "Mount Edgecombe",
+  "Reservoir Hills",
+  "Sherwood",
+  "Montclair",
+];
+
 export const designer = {
   name: "The Webster",
   url: "https://thewebster.co.za",
+};
+
+export type ServiceExtra = {
+  heading: string;
+  items: string[];
 };
 
 export type Service = {
@@ -24,6 +51,7 @@ export type Service = {
   image: string;
   intro: string[];
   included: string[];
+  extras?: ServiceExtra[];
 };
 
 export const services: Service[] = [
@@ -43,6 +71,39 @@ export const services: Service[] = [
       "Factory-backed warranty on parts fitted",
       "Fully insured technicians, fully equipped vehicles",
     ],
+    extras: [
+      {
+        heading: "Brands we repair",
+        items: [
+          "Samsung",
+          "LG",
+          "Defy",
+          "KIC",
+          "Hisense",
+          "Bosch",
+          "AEG",
+          "Whirlpool",
+          "Kelvinator",
+          "Side-by-side & French door fridges",
+          "Upright & chest freezers",
+        ],
+      },
+      {
+        heading: "Common faults we fix",
+        items: [
+          "Fridge not cooling",
+          "Freezer not freezing",
+          "Water leaks",
+          "Excessive ice build-up",
+          "Faulty thermostats",
+          "Compressor problems",
+          "Gas leaks",
+          "Fan motor failures",
+          "Electrical faults",
+          "Strange noises",
+        ],
+      },
+    ],
   },
   {
     slug: "commercial-refrigeration",
@@ -51,7 +112,7 @@ export const services: Service[] = [
     summary: "Restaurants, supermarkets and mobile fridges — kept running, kept legal.",
     image: "/images/gallery/commercial-fridge.jpg",
     intro: [
-      "Downtime on a commercial unit costs stock, and sometimes trading hours. We service restaurants, supermarkets, bakeries and mobile fridge units across Durban and Queensburgh, with the same on-site, fix-it-today approach as our domestic work.",
+      "Downtime on a commercial unit costs stock, and sometimes trading hours. We service restaurants, supermarkets, bakeries and mobile fridge units across Durban and the surrounding area, with the same on-site, fix-it-today approach as our domestic work.",
       "We work around your trading hours where we can, and we understand that modern refrigerants carry their own handling requirements — our team and our insurance are up to date on that.",
     ],
     included: [
@@ -59,6 +120,22 @@ export const services: Service[] = [
       "Mobile fridge units and delivery vehicles",
       "Scheduled maintenance to catch faults before they cost you stock",
       "Fully insured for flammable modern refrigerants",
+    ],
+    extras: [
+      {
+        heading: "Equipment we repair and service",
+        items: [
+          "Display fridges",
+          "Upright commercial refrigerators",
+          "Under-counter fridges",
+          "Beverage & bottle coolers",
+          "Freezer rooms & cold rooms",
+          "Walk-in refrigerators",
+          "Restaurant refrigeration",
+          "Supermarket refrigeration",
+          "Catering equipment refrigeration",
+        ],
+      },
     ],
   },
   {
@@ -76,6 +153,38 @@ export const services: Service[] = [
       "Walk-in cold rooms and freezer rooms for restaurants, bakeries and retail",
       "Factory-backed warranty on the finished system",
       "Ongoing service and repairs once it's installed",
+    ],
+    extras: [
+      {
+        heading: "Also covered",
+        items: [
+          "Temperature controller replacement",
+          "Compressor replacement",
+          "Refrigerant leak detection",
+          "Preventative maintenance",
+          "System servicing",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "maintenance",
+    name: "Refrigeration Maintenance",
+    shortName: "Maintenance",
+    summary: "Scheduled servicing that catches faults before they become breakdowns.",
+    image: "/images/gallery/domestic-fridge-1.jpg",
+    intro: [
+      "Most breakdowns give a warning first — a coil running dirty, a gas pressure slowly dropping, a thermostat drifting out of calibration. Regular maintenance catches those warnings before they turn into an emergency call-out.",
+      "A well-maintained system also runs more efficiently, which shows up directly on your power bill and extends the life of the equipment.",
+    ],
+    included: [
+      "Full system inspections",
+      "Coil cleaning",
+      "Gas pressure checks",
+      "Electrical testing",
+      "Thermostat calibration",
+      "Leak detection",
+      "Performance testing",
     ],
   },
   {
@@ -102,7 +211,40 @@ export const timeline = [
   { year: "Since", desc: "30+ years combined technician experience across the team." },
   {
     year: "Now",
-    desc: "2 branches — Durban and Queensburgh — fully insured, factory-backed warranties.",
+    desc: "Servicing Durban and 15+ surrounding suburbs, fully insured, factory-backed warranties.",
+  },
+];
+
+export type Faq = {
+  question: string;
+  answer: string;
+};
+
+export const faqs: Faq[] = [
+  {
+    question: "Do you repair all fridge brands?",
+    answer:
+      "Yes. We repair most major domestic and commercial refrigeration brands, including Samsung, LG, Defy, KIC, Hisense, Bosch, AEG and many others.",
+  },
+  {
+    question: "Do you provide commercial refrigeration repairs?",
+    answer:
+      "Yes. We service commercial refrigeration equipment, cold rooms, freezer rooms, display fridges and beverage coolers for restaurants, supermarkets and other businesses.",
+  },
+  {
+    question: "How quickly can you attend a breakdown?",
+    answer:
+      "We always aim to respond as quickly as possible and will arrange the earliest available appointment — call us directly for the fastest response.",
+  },
+  {
+    question: "Do you offer maintenance services?",
+    answer:
+      "Yes. Regular maintenance helps prevent unexpected breakdowns, improves energy efficiency and extends the life of your refrigeration equipment.",
+  },
+  {
+    question: "What areas do you service?",
+    answer:
+      "We cover Durban and the surrounding area, including Durban North, Umhlanga, La Lucia, Kloof, Hillcrest, Westville, Pinetown, Queensburgh, Malvern and more.",
   },
 ];
 
@@ -177,7 +319,7 @@ export const blogPosts: BlogPost[] = [
       "**3. The fridge feels warm to the touch.** Some warmth near the back or sides is normal. Excessive heat, especially combined with a hot compressor housing, points to it working harder than it should.",
       "**4. Food isn't staying as cold.** If your milk is turning sooner than usual or ice cream is softer than it should be, the compressor may not be maintaining pressure properly.",
       "**5. It won't start at all, or starts and stops immediately.** This is usually the final stage — a failed start relay or a seized compressor.",
-      "If you're seeing two or more of these, it's worth getting it looked at before it fails on a Friday night with a fridge full of food. We diagnose and repair on-site across Durban and Queensburgh.",
+      "If you're seeing two or more of these, it's worth getting it looked at before it fails on a Friday night with a fridge full of food. We diagnose and repair on-site across Durban and the surrounding area.",
     ],
   },
   {

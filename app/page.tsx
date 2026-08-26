@@ -6,7 +6,9 @@ import BrandLogos from "@/components/BrandLogos";
 import ClientLogos from "@/components/ClientLogos";
 import ServiceCard from "@/components/ServiceCard";
 import ReviewsSection from "@/components/ReviewsSection";
-import { site, services, blogPosts } from "@/lib/content";
+import FaqSection from "@/components/FaqSection";
+import TagList from "@/components/TagList";
+import { site, services, blogPosts, serviceAreas } from "@/lib/content";
 
 export default function Home() {
   const latestPosts = blogPosts.slice(-3).reverse();
@@ -18,15 +20,16 @@ export default function Home() {
         <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[1.1fr_1fr] lg:items-center">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
-              Durban &amp; Queensburgh
+              Est. 2004 &middot; Durban, KwaZulu-Natal
             </p>
-            <h1 className="mt-5 text-balance font-display text-4xl font-bold leading-[1.05] sm:text-6xl">
-              Keeping cool <span className="font-normal text-mist">under every circumstance.</span>
+            <h1 className="mt-5 text-balance font-display text-4xl font-bold leading-[1.05] sm:text-5xl">
+              {site.heroHeadline}
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-mist">
-              A cold chain that hasn&rsquo;t broken since 2004 — domestic and commercial
-              refrigeration, repaired on-site by technicians who treat every compressor
-              like it&rsquo;s the last one.
+              Professional refrigeration repair, maintenance and installation for homes
+              and businesses since 2004. Whether your fridge has stopped cooling or your
+              business needs urgent commercial refrigeration attention, our experienced
+              technicians respond fast &mdash; {site.tagline.toLowerCase()}.
             </p>
             <div className="mt-9 flex flex-wrap gap-3.5">
               <a
@@ -62,7 +65,7 @@ export default function Home() {
           {[
             { label: "Established", value: "2004" },
             { label: "Experience", value: "30+ yrs" },
-            { label: "Coverage", value: "2 branches" },
+            { label: "Coverage", value: "15+ suburbs" },
             { label: "Cover", value: "Fully insured" },
           ].map((f) => (
             <div key={f.label} className="bg-deep px-6 py-8 text-center sm:text-left">
@@ -89,7 +92,7 @@ export default function Home() {
             All services &rarr;
           </Link>
         </div>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
             <ServiceCard key={s.slug} service={s} />
           ))}
@@ -143,6 +146,23 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+        <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+          Where we work
+        </p>
+        <h2 className="mt-2.5 font-display text-2xl font-semibold sm:text-3xl">
+          Areas we service
+        </h2>
+        <p className="mt-3 max-w-lg text-mist">
+          Based in Durban, on the road across KwaZulu-Natal.
+        </p>
+        <div className="mt-6">
+          <TagList items={serviceAreas} />
+        </div>
+      </section>
+
+      <FaqSection />
+
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
@@ -190,7 +210,7 @@ export default function Home() {
                 Fridge down? We&rsquo;re on call.
               </h2>
               <p className="mt-2 max-w-md text-mist">
-                Mon&ndash;Sat, across Durban and Queensburgh.
+                Mon&ndash;Sat, across Durban and the surrounding area.
               </p>
             </div>
             <a

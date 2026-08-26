@@ -15,8 +15,8 @@ export default function Footer() {
             className="h-8 w-auto"
           />
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-mist">
-            Domestic and commercial refrigeration in Durban and Queensburgh, on-site,
-            since 2004.
+            Domestic and commercial refrigeration in Durban and the surrounding area,
+            on-site, since 2004.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
       <div className="border-t border-line px-5 py-6 sm:px-8">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 font-mono text-xs text-mist">
           <span>&copy; {new Date().getFullYear()} Reliable Refrigeration</span>
-          <span>Durban &amp; Queensburgh, South Africa</span>
+          <span>Durban, South Africa</span>
           <span>
             Website by{" "}
             <a

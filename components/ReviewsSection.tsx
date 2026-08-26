@@ -44,7 +44,7 @@ export default function ReviewsSection() {
       <div className="mt-10 flex flex-col items-start gap-5 rounded-2xl border border-line bg-deep-2/60 p-7 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-4">
           <Stars />
-          <p className="text-frost/90">Rated by customers across Durban and Queensburgh.</p>
+          <p className="text-frost/90">Rated by customers across Durban and the surrounding area.</p>
         </div>
         <a
           href={site.googleReviewsUrl}

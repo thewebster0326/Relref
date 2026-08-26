@@ -7,7 +7,7 @@ import { services, site } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Services | Reliable Refrigeration",
   description:
-    "Domestic repairs, commercial refrigeration, cold rooms & freezer rooms, and refrigeration sales — serviced on-site across Durban and Queensburgh.",
+    "Domestic repairs, commercial refrigeration, cold rooms & freezer rooms, maintenance and refrigeration sales — serviced on-site across Durban and the surrounding area.",
 };
 
 export default function ServicesPage() {
@@ -29,7 +29,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
             <ServiceCard key={s.slug} service={s} />
           ))}

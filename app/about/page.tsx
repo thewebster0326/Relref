@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Timeline from "@/components/Timeline";
-import { site } from "@/lib/content";
+import TagList from "@/components/TagList";
+import { site, serviceAreas } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About | Reliable Refrigeration",
   description:
-    "Owner-operated since 2004, Reliable Refrigeration services domestic and commercial refrigeration across Durban and Queensburgh.",
+    "Owner-operated since 2004, Reliable Refrigeration services domestic and commercial refrigeration across Durban, Umhlanga, Hillcrest, Kloof and the surrounding area.",
 };
 
 const values = [
@@ -105,28 +106,31 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col justify-center">
             <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
-              Two branches
+              Where we work
             </p>
             <h2 className="mt-2.5 font-display text-2xl font-semibold sm:text-3xl">
-              Durban &amp; Queensburgh
+              Based in Durban, on the road across KZN
             </h2>
             <p className="mt-4 max-w-md text-mist">
-              Two branches cover most areas in and around Durban, so a technician is
-              never far from wherever your fridge, cold room or freezer room actually
-              is.
+              From Durban North and Umhlanga to Kloof, Hillcrest and Queensburgh, a
+              technician is never far from wherever your fridge, cold room or freezer
+              room actually is.
             </p>
+            <div className="mt-5">
+              <TagList items={serviceAreas} />
+            </div>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href={`tel:${site.phones.durban.replace(/\s/g, "")}`}
+                href={`tel:${site.phones.office.replace(/\s/g, "")}`}
                 className="rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-frost hover:border-ice hover:text-ice"
               >
-                Durban — {site.phones.durban}
+                Call {site.phones.office}
               </a>
               <a
-                href={`tel:${site.phones.queensburgh.replace(/\s/g, "")}`}
+                href={`tel:${site.phones.alternate.replace(/\s/g, "")}`}
                 className="rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-frost hover:border-ice hover:text-ice"
               >
-                Queensburgh — {site.phones.queensburgh}
+                Alt. {site.phones.alternate}
               </a>
             </div>
           </div>

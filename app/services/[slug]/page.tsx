@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import TagList from "@/components/TagList";
 import { services, site } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -85,12 +86,29 @@ export default async function ServicePage({
         </div>
       </section>
 
-      <section className="border-t border-line bg-deep-2/40">
+      {service.extras && service.extras.length > 0 && (
+        <section className="border-t border-line bg-deep-2/40">
+          <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+            <div className="flex flex-col gap-10 sm:flex-row sm:flex-wrap">
+              {service.extras.map((extra) => (
+                <div key={extra.heading} className="flex-1 sm:min-w-[260px]">
+                  <h2 className="font-display text-xl font-semibold">{extra.heading}</h2>
+                  <div className="mt-4">
+                    <TagList items={extra.items} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section className="border-t border-line">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
             Other services
           </p>
-          <div className="mt-6 grid gap-5 sm:grid-cols-3">
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {others.map((s) => (
               <Link
                 key={s.slug}

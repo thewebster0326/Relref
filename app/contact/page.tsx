@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
-import { site } from "@/lib/content";
+import TagList from "@/components/TagList";
+import { site, serviceAreas } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Contact | Reliable Refrigeration",
   description:
-    "Get in touch with Reliable Refrigeration — Durban and Queensburgh, on call for domestic and commercial refrigeration.",
+    "Get in touch with Reliable Refrigeration — Durban and the surrounding area, on call for domestic and commercial refrigeration.",
 };
 
-const branches = [
+const phoneLines = [
   { label: "Mobile", value: site.phones.mobile },
-  { label: "Durban", value: site.phones.durban },
-  { label: "Queensburgh", value: site.phones.queensburgh },
+  { label: "Office", value: site.phones.office },
+  { label: "Alternate", value: site.phones.alternate },
 ];
 
 export default function ContactPage() {
@@ -26,8 +27,7 @@ export default function ContactPage() {
             Get us on site
           </h1>
           <p className="mt-6 max-w-lg text-mist">
-            Call the branch closest to you, or send an enquiry and we&rsquo;ll get
-            back to you.
+            Call us directly, or send an enquiry and we&rsquo;ll get back to you.
           </p>
         </div>
       </section>
@@ -36,7 +36,7 @@ export default function ContactPage() {
         <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr]">
           <div>
             <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-              {branches.map((b) => (
+              {phoneLines.map((b) => (
                 <a
                   key={b.label}
                   href={`tel:${b.value.replace(/\s/g, "")}`}
@@ -71,6 +71,20 @@ export default function ContactPage() {
             <div className="mt-6">
               <ContactForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+          <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+            Where we work
+          </p>
+          <h2 className="mt-2.5 font-display text-2xl font-semibold sm:text-3xl">
+            Areas we service
+          </h2>
+          <div className="mt-6">
+            <TagList items={serviceAreas} />
           </div>
         </div>
       </section>
