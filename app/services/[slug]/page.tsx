@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import TagList from "@/components/TagList";
-import { services, site } from "@/lib/content";
+import { services, site, areas, landingServiceSlugs } from "@/lib/content";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -97,6 +97,30 @@ export default async function ServicePage({
                     <TagList items={extra.items} />
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {landingServiceSlugs.includes(service.slug) && (
+        <section className="border-t border-line bg-deep-2/40">
+          <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">
+              Where we do this
+            </p>
+            <h2 className="mt-2.5 font-display text-2xl font-semibold sm:text-3xl">
+              {service.shortName}, area by area
+            </h2>
+            <div className="mt-6 flex flex-wrap gap-2.5">
+              {areas.map((a) => (
+                <Link
+                  key={a.slug}
+                  href={`/services/${service.slug}/${a.slug}`}
+                  className="rounded-full border border-line px-4 py-2 font-mono text-xs text-mist transition-colors hover:border-ice hover:text-ice"
+                >
+                  {a.name}
+                </Link>
               ))}
             </div>
           </div>

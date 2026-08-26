@@ -12,25 +12,43 @@ export const site = {
   googleReviewsUrl: "https://share.google/hqPOuoqn848mp6M8z",
 };
 
-export const serviceAreas = [
-  "Durban",
-  "Durban North",
-  "Umhlanga",
-  "La Lucia",
-  "Kloof",
-  "Hillcrest",
-  "Westville",
-  "Pinetown",
-  "Queensburgh",
-  "Malvern",
-  "Berea",
-  "Glenwood",
-  "Bluff",
-  "Chatsworth",
-  "Mount Edgecombe",
-  "Reservoir Hills",
-  "Sherwood",
-  "Montclair",
+export type AreaProfile = {
+  slug: string;
+  name: string;
+  region: string;
+  neighborSlugs: [string, string];
+};
+
+export const areas: AreaProfile[] = [
+  { slug: "durban", name: "Durban", region: "central Durban", neighborSlugs: ["berea", "glenwood"] },
+  { slug: "durban-north", name: "Durban North", region: "northern Durban", neighborSlugs: ["umhlanga", "mount-edgecombe"] },
+  { slug: "umhlanga", name: "Umhlanga", region: "the North Coast", neighborSlugs: ["la-lucia", "durban-north"] },
+  { slug: "la-lucia", name: "La Lucia", region: "the North Coast", neighborSlugs: ["umhlanga", "durban-north"] },
+  { slug: "kloof", name: "Kloof", region: "the Upper Highway", neighborSlugs: ["hillcrest", "westville"] },
+  { slug: "hillcrest", name: "Hillcrest", region: "the Upper Highway", neighborSlugs: ["kloof", "westville"] },
+  { slug: "westville", name: "Westville", region: "the Outer West", neighborSlugs: ["pinetown", "kloof"] },
+  { slug: "pinetown", name: "Pinetown", region: "the Outer West", neighborSlugs: ["westville", "queensburgh"] },
+  { slug: "queensburgh", name: "Queensburgh", region: "the south-west", neighborSlugs: ["malvern", "pinetown"] },
+  { slug: "malvern", name: "Malvern", region: "the south-west", neighborSlugs: ["queensburgh", "chatsworth"] },
+  { slug: "berea", name: "Berea", region: "central Durban", neighborSlugs: ["glenwood", "durban"] },
+  { slug: "glenwood", name: "Glenwood", region: "central Durban", neighborSlugs: ["berea", "sherwood"] },
+  { slug: "bluff", name: "Bluff", region: "the Bluff", neighborSlugs: ["montclair", "chatsworth"] },
+  { slug: "chatsworth", name: "Chatsworth", region: "the south-west", neighborSlugs: ["malvern", "bluff"] },
+  { slug: "mount-edgecombe", name: "Mount Edgecombe", region: "northern Durban", neighborSlugs: ["durban-north", "umhlanga"] },
+  { slug: "reservoir-hills", name: "Reservoir Hills", region: "central Durban", neighborSlugs: ["sherwood", "durban-north"] },
+  { slug: "sherwood", name: "Sherwood", region: "central Durban", neighborSlugs: ["glenwood", "reservoir-hills"] },
+  { slug: "montclair", name: "Montclair", region: "the Bluff", neighborSlugs: ["bluff", "chatsworth"] },
+];
+
+export const serviceAreas = areas.map((a) => a.name);
+
+// The 3 highest-search-volume services get a dedicated landing page per
+// area (3 services x 18 areas = 54 pages). Maintenance and Sales stay as
+// single service pages only.
+export const landingServiceSlugs = [
+  "domestic-repairs",
+  "commercial-refrigeration",
+  "cold-rooms-freezer-rooms",
 ];
 
 export const designer = {
