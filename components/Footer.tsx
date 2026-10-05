@@ -39,6 +39,10 @@ export default function Footer() {
             <a href={`mailto:${site.email}`} className="hover:text-frost">
               {site.email}
             </a>
+            <p>
+              {site.address.street}, {site.address.suburb}, {site.address.city}{" "}
+              {site.address.postalCode}
+            </p>
           </div>
         </div>
       </div>

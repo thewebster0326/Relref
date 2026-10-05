@@ -50,6 +50,14 @@ export default function ContactPage() {
                   </p>
                 </a>
               ))}
+              <div className="rounded-2xl border border-line bg-deep-2/60 p-6">
+                <p className="font-mono text-xs uppercase tracking-wider text-mist">Address</p>
+                <p className="mt-1.5 font-display text-lg font-semibold text-frost">
+                  {site.address.street}, {site.address.suburb}
+                  <br />
+                  {site.address.city}, {site.address.postalCode}
+                </p>
+              </div>
               <a
                 href={`mailto:${site.email}`}
                 className="rounded-2xl border border-line bg-deep-2/60 p-6 transition-colors hover:border-ice"
@@ -72,6 +80,20 @@ export default function ContactPage() {
               <ContactForm />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+          <iframe
+            title="Reliable Refrigeration on Google Maps"
+            src={`https://www.google.com/maps?q=${encodeURIComponent(
+              `${site.name}, ${site.address.street}, ${site.address.suburb}, ${site.address.city} ${site.address.postalCode}`
+            )}&output=embed`}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="h-80 w-full rounded-2xl border border-line"
+          />
         </div>
       </section>
 

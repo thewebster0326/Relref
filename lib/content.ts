@@ -9,6 +9,15 @@ export const site = {
     alternate: "031 464 2281",
   },
   email: "info@relref.co.za",
+  url: "https://relref.co.za",
+  address: {
+    street: "81 Musgrave Rd",
+    suburb: "Musgrave",
+    city: "Durban",
+    region: "KwaZulu-Natal",
+    postalCode: "4001",
+    country: "ZA",
+  },
   googleReviewsUrl: "https://share.google/hqPOuoqn848mp6M8z",
 };
 
