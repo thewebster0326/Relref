@@ -7,6 +7,7 @@ import ClientLogos from "@/components/ClientLogos";
 import ServiceCard from "@/components/ServiceCard";
 import ReviewsSection from "@/components/ReviewsSection";
 import FaqSection from "@/components/FaqSection";
+import PostImage from "@/components/PostImage";
 import TagList from "@/components/TagList";
 import { site, services, blogPosts, serviceAreas } from "@/lib/content";
 
@@ -181,22 +182,25 @@ export default function Home() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="flex flex-col rounded-2xl border border-line bg-deep-2/50 p-6 transition-colors hover:border-ice"
+              className="flex flex-col overflow-hidden rounded-2xl border border-line bg-deep-2/50 transition-colors hover:border-ice"
             >
-              <p className="font-mono text-xs text-mist">
-                {new Date(post.date).toLocaleDateString("en-ZA", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </p>
-              <h3 className="mt-3 font-display text-lg font-semibold leading-snug">
-                {post.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-mist">{post.excerpt}</p>
-              <span className="mt-4 font-mono text-xs uppercase tracking-wider text-ice">
-                Read &rarr;
-              </span>
+              <PostImage post={post} className="h-44" />
+              <div className="flex flex-1 flex-col p-6">
+                <p className="font-mono text-xs text-mist">
+                  {new Date(post.date).toLocaleDateString("en-ZA", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </p>
+                <h3 className="mt-3 font-display text-lg font-semibold leading-snug">
+                  {post.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-mist">{post.excerpt}</p>
+                <span className="mt-auto pt-4 font-mono text-xs uppercase tracking-wider text-ice">
+                  Read &rarr;
+                </span>
+              </div>
             </Link>
           ))}
         </div>
