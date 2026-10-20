@@ -26,18 +26,20 @@ export type AreaProfile = {
   name: string;
   region: string;
   neighborSlugs: [string, string];
+  // Smaller localities covered under this page rather than given their own
+  includes?: string[];
 };
 
 export const areas: AreaProfile[] = [
   { slug: "durban", name: "Durban", region: "central Durban", neighborSlugs: ["berea", "glenwood"] },
-  { slug: "durban-north", name: "Durban North", region: "northern Durban", neighborSlugs: ["umhlanga", "mount-edgecombe"] },
-  { slug: "umhlanga", name: "Umhlanga", region: "the North Coast", neighborSlugs: ["la-lucia", "durban-north"] },
+  { slug: "durban-north", name: "Durban North", region: "northern Durban", neighborSlugs: ["umhlanga", "mount-edgecombe"] , includes: ["Glen Hills"] },
+  { slug: "umhlanga", name: "Umhlanga", region: "the North Coast", neighborSlugs: ["la-lucia", "durban-north"] , includes: ["Umhlanga Ridge", "Umhlanga Rocks"] },
   { slug: "la-lucia", name: "La Lucia", region: "the North Coast", neighborSlugs: ["umhlanga", "durban-north"] },
   { slug: "kloof", name: "Kloof", region: "the Upper Highway", neighborSlugs: ["hillcrest", "westville"] },
   { slug: "hillcrest", name: "Hillcrest", region: "the Upper Highway", neighborSlugs: ["kloof", "westville"] },
   { slug: "westville", name: "Westville", region: "the Outer West", neighborSlugs: ["pinetown", "kloof"] },
-  { slug: "pinetown", name: "Pinetown", region: "the Outer West", neighborSlugs: ["westville", "queensburgh"] },
-  { slug: "queensburgh", name: "Queensburgh", region: "the south-west", neighborSlugs: ["malvern", "pinetown"] },
+  { slug: "pinetown", name: "Pinetown", region: "the Outer West", neighborSlugs: ["westville", "queensburgh"] , includes: ["Cowies Hill"] },
+  { slug: "queensburgh", name: "Queensburgh", region: "the south-west", neighborSlugs: ["malvern", "pinetown"] , includes: ["Escombe"] },
   { slug: "malvern", name: "Malvern", region: "the south-west", neighborSlugs: ["queensburgh", "chatsworth"] },
   { slug: "berea", name: "Berea", region: "central Durban", neighborSlugs: ["glenwood", "durban"] },
   { slug: "glenwood", name: "Glenwood", region: "central Durban", neighborSlugs: ["berea", "sherwood"] },
@@ -47,12 +49,16 @@ export const areas: AreaProfile[] = [
   { slug: "reservoir-hills", name: "Reservoir Hills", region: "central Durban", neighborSlugs: ["sherwood", "durban-north"] },
   { slug: "sherwood", name: "Sherwood", region: "central Durban", neighborSlugs: ["glenwood", "reservoir-hills"] },
   { slug: "montclair", name: "Montclair", region: "the Bluff", neighborSlugs: ["bluff", "chatsworth"] },
+  { slug: "newlands-east", name: "Newlands East", region: "north-west Durban", neighborSlugs: ["newlands-west", "reservoir-hills"], includes: ["Avoca Hills"] },
+  { slug: "newlands-west", name: "Newlands West", region: "north-west Durban", neighborSlugs: ["newlands-east", "springfield"] },
+  { slug: "springfield", name: "Springfield", region: "northern Durban", neighborSlugs: ["newlands-west", "durban-north"] },
+  { slug: "bellair", name: "Bellair", region: "southern Durban", neighborSlugs: ["montclair", "durban"] },
 ];
 
 export const serviceAreas = areas.map((a) => a.name);
 
 // The 3 highest-search-volume services get a dedicated landing page per
-// area (3 services x 18 areas = 54 pages). Maintenance and Sales stay as
+// area (3 services x 22 areas = 66 pages). Maintenance and Sales stay as
 // single service pages only.
 export const landingServiceSlugs = [
   "domestic-repairs",

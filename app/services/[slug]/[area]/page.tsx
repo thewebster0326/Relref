@@ -64,6 +64,11 @@ export default async function AreaLandingPage({
             {service.shortName} in {area.name}
           </h1>
           <p className="mt-5 max-w-lg text-mist">{landingIntro(service, area)}</p>
+          {area.includes && area.includes.length > 0 && (
+            <p className="mt-3 max-w-lg text-sm text-mist">
+              This page also covers {area.includes.join(" and ")}.
+            </p>
+          )}
         </div>
       </section>
 
