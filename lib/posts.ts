@@ -705,4 +705,307 @@ export const blogPosts: BlogPost[] = [
       "If your fridge is making a noise you do not like, call us. We can often tell what it is from your description, and we diagnose and repair household fridges on-site across Durban and the surrounding area."
     ],
   },
+  {
+    slug: "how-much-does-fridge-repair-cost-durban",
+    title: "How much does a fridge repair cost in Durban?",
+    date: "2026-10-12",
+    readMinutes: 7,
+    excerpt:
+      "No two fridge repairs cost the same. Here is what drives the price, what a fair quote looks like and how to avoid paying twice.",
+    image: "/images/blog/cover-repair-cost.jpg",
+    imageAlt: "Cover graphic: what does a fridge repair cost in Durban",
+    imageFit: "cover",
+    body: [
+      "It is the first thing people ask when a fridge stops working, and the honest answer is that it depends. A fridge that stopped because of a worn door seal and one that stopped because of a seized compressor can differ in price by a factor of ten. Rather than quote a number that would be wrong for most readers, this guide explains what actually drives the cost, so you can judge whether a quote is fair.",
+      "## The four parts of a repair bill",
+      ul(
+        "**The call-out and diagnosis.** A technician has to travel to you, open the unit up and test it. Most companies charge a call-out or diagnostic fee for this. Ask what it is before the visit, and whether it is deducted from the repair if you go ahead.",
+        "**The parts.** A start relay, a thermostat, a fan motor, a defrost heater, a control board and a compressor are all very different prices. Genuine parts cost more than cheap copies, but they usually last longer and are easier to warranty.",
+        "**The labour.** Simple swaps take minutes. Sealed system work such as replacing a compressor or fixing a leak takes hours, because it needs recovery of the refrigerant, brazing, a vacuum and a recharge.",
+        "**Gas.** If the refrigerant has to be replaced, the type and quantity matter. Hydrocarbon systems have small charges, but need proper handling."
+      ),
+      img(
+        g("domestic-fridge.jpg"),
+        "Side-by-side fridge freezer with doors open",
+        "Larger, feature-rich fridges often have more parts that can fail, and the parts cost more."
+      ),
+      "## Broad cost bands (not prices)",
+      "Instead of rand figures, think in bands. Prices change, and every brand and model is different.",
+      ul(
+        "**Low:** door seals, thermostats, start relays, fans, defrost heaters, drain blockages and temperature sensors. These are the most common faults and usually the cheapest.",
+        "**Medium:** control boards, water inlet valves, damper assemblies and some electronic components.",
+        "**High:** compressor replacement, evaporator or condenser leaks and anything else that means opening the sealed refrigerant circuit."
+      ),
+      "## What makes a repair more expensive",
+      ul(
+        "**The brand and model.** Common brands such as Defy, Samsung, LG and Hisense usually have parts available locally. Rare or imported models can take weeks to source.",
+        "**The age of the fridge.** Older units can have corroded pipework and brittle plastics that complicate repairs.",
+        "**Waiting too long.** A small fault ignored for months, such as a noisy fan or a failing relay, can cause a bigger one, like a burnt compressor.",
+        "**Urgency.** After-hours and weekend call-outs normally cost more.",
+        "**Access.** Built-in fridges and units wedged into tight spaces take longer to work on."
+      ),
+      "## What a fair quote looks like",
+      ul(
+        "It names the fault, not just a vague 'it needs gas'.",
+        "It separates the call-out, parts and labour.",
+        "It tells you whether the part is new, and what warranty you get on it and on the work.",
+        "It is given before work starts, and the technician tells you if the cost changes once the unit is opened up.",
+        "It comes with an honest opinion on whether the repair is worth it for the age of the fridge."
+      ),
+      "## Red flags",
+      ul(
+        "A quote for a 'regas' without finding a leak. If gas has escaped, something is leaking, and topping up only delays the problem.",
+        "A very low phone quote that grows once the technician arrives.",
+        "No invoice, no warranty and no company details.",
+        "Pressure to decide on the spot, or to replace parts that you have not been shown are faulty."
+      ),
+      "## How to keep the bill down",
+      ul(
+        "Act early. A fridge that is making new noises or not holding temperature is cheaper to fix now than after it fails.",
+        "Do the free checks first: power supply, settings, door seals and a dusty condenser coil.",
+        "Keep the model number and fault description ready when you call. It helps the technician bring the right parts and fix it in one visit.",
+        "Ask whether the unit is worth repairing at all. Our repair or replace guide covers how to decide."
+      ),
+      "Customers who have reviewed us often mention honest explanations and fair estimates, and that is how we work: we tell you what is wrong, what it will cost and whether it is worth doing. Call us on 083 538 5106 for a quote on your fridge anywhere in Durban and the surrounding suburbs."
+    ],
+  },
+  {
+    slug: "fridge-clicking-but-not-starting",
+    title: "Fridge clicking but not starting? What the click is telling you",
+    date: "2026-10-16",
+    readMinutes: 6,
+    excerpt:
+      "A fridge that clicks and then goes quiet is usually trying to start and failing. Here is what that means and what is safe to try.",
+    image: "/images/blog/cover-clicking.jpg",
+    imageAlt: "Cover graphic: fridge clicking but not starting",
+    imageFit: "cover",
+    body: [
+      "You hear a click from the back of the fridge. A few minutes later, another click. The fridge never settles into its usual hum and the food slowly warms up. This is one of the most common calls we get, and the good news is that the click is a useful clue. It tells us that power is reaching the fridge and the control circuit is working. The problem is somewhere in the starting circuit of the compressor.",
+      "## What the click is",
+      "A compressor needs a burst of extra current to start turning. On most domestic fridges this is handled by two small parts that sit in a plastic box on the side of the compressor: a start relay (or PTC starter) and an overload protector. When you hear a click, the overload protector is usually switching off because the compressor drew too much current and failed to start. A few minutes later it cools down, resets with another click and tries again.",
+      "## The usual suspects",
+      "## 1. A worn start relay",
+      "The relay is a small, cheap component that takes a lot of punishment. Over years its contacts burn and it stops delivering the start current. This is the most common cause and the least expensive to fix. The fridge is otherwise perfectly healthy.",
+      img(
+        g("domestic-fridge-1.jpg"),
+        "Bottom-freezer fridge with a water dispenser",
+        "The start relay and overload sit in a small box on the compressor at the back, so the fix is quick for a technician."
+      ),
+      "## 2. A weak overload protector",
+      "The overload is a thermal switch that protects the compressor from overheating. When it gets old, it trips too easily, even when the compressor is fine. It is cheap and usually replaced together with the relay.",
+      "## 3. A start capacitor that has failed",
+      "Some fridges use a capacitor to help the compressor start. If it dries out, the compressor hums and clicks but cannot turn. Again, it is an inexpensive part.",
+      "## 4. A compressor that has seized or is struggling",
+      "If the starting parts are good and the fridge still clicks, the problem may be the compressor itself. A compressor with worn windings or a mechanical seizure cannot turn however much current you give it. This is the expensive result, and a technician can confirm it by measuring the winding resistance and current.",
+      "## 5. Power problems",
+      "A low voltage supply, a loose plug or a failing extension lead can make the compressor struggle to start. After a power cut, a surge or load shedding, a voltage drop can also stall a start attempt. Plug the fridge directly into a good wall socket for a test.",
+      "## 6. High head pressure",
+      "If pressure on the high side has not equalised after a power cut, the compressor may not be able to start right away. Waiting about five to ten minutes after switching off lets the pressure drop. This is why quick on and off switching often makes things worse.",
+      "## What you can safely try",
+      ul(
+        "Check that the plug is firmly in and try a different socket.",
+        "Switch the fridge off at the wall and leave it for 10 minutes, then switch it back on once.",
+        "Check that the temperature dial is not at the off position.",
+        "Vacuum dust off the condenser coil and make sure the fridge has airflow around it.",
+        "Move food that matters to a cooler with ice if the fridge is warm."
+      ),
+      "## What not to do",
+      ul(
+        "Do not keep switching the fridge on and off. Each attempt stresses the compressor and the starting parts.",
+        "Do not tap or hit the compressor. It can damage the internals.",
+        "Do not open the electrical box on the compressor yourself unless you know how to isolate and test it. It is mains voltage.",
+        "Do not leave the fridge clicking for days with food inside."
+      ),
+      "## Does a clicking fridge need replacing?",
+      "Usually not. In most cases the fault is a starting part costing a fraction of a new fridge, and the technician can fix it in a single visit. Only when the compressor itself has failed does the repair-or-replace decision come up, and then it depends on the age and quality of the fridge.",
+      "If your fridge is clicking and not starting, switch it off, keep the doors closed and call us. We diagnose and repair household fridges on-site across Durban and the surrounding suburbs, and we carry the common starting parts on the van."
+    ],
+  },
+  {
+    slug: "cold-room-failed-what-to-do-in-the-first-hour",
+    title: "Cold room failed? What to do in the first hour",
+    date: "2026-10-20",
+    readMinutes: 7,
+    excerpt:
+      "When a cold room stops cooling, what you do in the first hour decides how much stock you lose. A calm, practical checklist for restaurants and bakeries.",
+    image: "/images/blog/cover-cold-room-failure.jpg",
+    imageAlt: "Cover graphic: cold room failed, your first hour",
+    imageFit: "cover",
+    body: [
+      "It is a bad moment. You open the cold room and it is warm, or the alarm is beeping, or the display shows a temperature well above where it should be. Staff look at you. Deliveries are due. The next hour matters more than anything else, because stock that is moved quickly can often be saved, and a cold room that is left shut with a fault can lose thousands of rand of product.",
+      "Here is a simple order of actions. It is worth printing and sticking on the wall next to the door.",
+      "## Minutes 0 to 10: protect the stock",
+      ul(
+        "Check the temperature. Note the time and the reading. This is the start of your record.",
+        "Keep the door closed as much as possible. The more it opens, the faster it warms.",
+        "Decide what is most at risk: raw meat, poultry, fish, dairy, cooked food and cream-based items first.",
+        "Move high-risk stock into any working fridge or freezer, even if it is a domestic unit in the back. Use cooler boxes with ice if you have them.",
+        "Do not overload working units, as they will struggle and fail to keep the food cold."
+      ),
+      img(
+        g("coldroom.jpg"),
+        "Inside an empty insulated cold room",
+        "A closed, well insulated room holds its temperature for a while, so avoid opening the door unless you need to."
+      ),
+      "## Minutes 10 to 20: quick checks",
+      "A surprising number of failures turn out to be simple. Before you call anyone, check these in a couple of minutes:",
+      ul(
+        "Is the power on? Look at the main isolator, the distribution board and any tripped breakers.",
+        "Is the condensing unit running? Go and listen to it. A silent unit with a warm room points to a power or compressor problem.",
+        "Is the evaporator fan running inside? A fan that has stopped can warm the room even if the compressor is working.",
+        "Is the door closing and sealing? Check the gasket and that nothing is jamming the door open.",
+        "Is the evaporator covered in ice? If it is a solid block, the defrost has failed. Note it for the technician.",
+        "Has the controller been changed or set to defrost or off by mistake?"
+      ),
+      "## Minutes 20 to 30: call for help",
+      "If the room is still warm, call your refrigeration technician. Have the following ready so they can help quickly:",
+      ul(
+        "The temperature now and when it started rising.",
+        "What you have already checked.",
+        "The make and model on the condensing unit data plate, and the refrigerant type if you can read it.",
+        "Any noises, smells, error codes or alarms.",
+        "Your address and access arrangements."
+      ),
+      "A call to a company that knows your system is much quicker than searching for a new one in an emergency. This is a good reason to have a service relationship before something breaks.",
+      "## Minutes 30 to 60: keep the cold chain",
+      ul(
+        "Keep recording the temperature every 15 minutes.",
+        "Group the stock that you moved, and label what came from where and when.",
+        "Use the time while waiting for the technician to arrange backup, such as cooler boxes, a hired cold trailer or help from a neighbouring business.",
+        "Do not add more warm product to the failing room."
+      ),
+      "## How long is food safe?",
+      "As a general rule, perishable food that has been above 5 degrees Celsius for more than about four hours should be thrown away. Frozen food that still contains ice crystals and is cold to the touch can usually be kept, though quality may suffer. When in doubt, follow your food safety procedure and your supplier's advice. It is better to discard a small amount than to risk customers' health.",
+      "## What to do afterwards",
+      ul(
+        "Get a written report from the technician on the cause and repair.",
+        "Record the incident, the temperatures and what was discarded. Insurance claims and audits want this information.",
+        "Ask what could prevent a repeat: maintenance, a temperature alarm, a surge protector or a backup plan.",
+        "Review your plan with staff so that everyone knows what to do next time."
+      ),
+      "## Prevent the next emergency",
+      "Most cold room failures give a warning. Rising temperatures, constant running, ice on the coil and strange noises are all signs. A scheduled maintenance plan catches them early, and a remote temperature alarm tells you before the stock is lost. Our cold room maintenance checklist and our servicing schedule guide are good places to start.",
+      "We repair and service cold rooms and freezer rooms across Durban and surrounding suburbs. If yours has failed, call 083 538 5106 and tell us what you can see. We will tell you what to do while we are on the way."
+    ],
+  },
+  {
+    slug: "keep-your-fridge-running-in-a-durban-summer",
+    title: "How to keep your fridge running through a Durban summer",
+    date: "2026-10-24",
+    readMinutes: 6,
+    excerpt:
+      "Heat, humidity and long power cuts make summer the hardest season for fridges. Ten simple habits that prevent most summer breakdowns.",
+    image: "/images/blog/cover-summer-heat.jpg",
+    imageAlt: "Cover graphic: keep your fridge alive in a Durban summer",
+    imageFit: "cover",
+    body: [
+      "Every year, as the temperature climbs in November and December, our phones get busier. Fridges that have been fine all winter start to struggle, freezers lose their edge and display coolers in shops start to sweat. It is not a coincidence. Summer is the hardest season for refrigeration, and Durban's heat and humidity make it harder still. The good news is that a few habits prevent most of the problems.",
+      "## Why summer is harder on fridges",
+      ul(
+        "The condenser has to push heat into warmer air, so the compressor runs longer and at higher pressure.",
+        "Humid air brings more moisture in each time the door opens, which means more frost and more load on the defrost system.",
+        "More people, more drinks, more food and more door openings all raise the load.",
+        "Thunderstorms, power surges and outages are most common in summer.",
+        "Hot kitchens, garages and outbuildings can exceed what a domestic fridge is designed to handle."
+      ),
+      img(
+        g("domestic-fridge.jpg"),
+        "Large side-by-side fridge freezer",
+        "Give the fridge room to breathe. A few centimetres of clearance makes a real difference in summer."
+      ),
+      "## Ten habits that help",
+      "## 1. Give it space",
+      "Leave a gap of several centimetres behind and beside the fridge for airflow, and never box it in with cabinets without ventilation. Heat that cannot escape forces the compressor to work harder.",
+      "## 2. Clean the condenser coil",
+      "Dust and pet hair on the coil act like a blanket. Vacuum it every three to six months, and more often if you have pets. It is the single most effective maintenance job you can do yourself.",
+      "## 3. Keep it away from heat",
+      "Do not place a fridge next to an oven, a dishwasher exhaust or in direct sun. Garage fridges in a Durban summer are working in conditions that can exceed their rating, so check the climate class on the data plate.",
+      "## 4. Do not overload the door",
+      "Every time the door opens, warm, humid air gets in. Decide what you want before you open it, and close it promptly. Do not stand with the door open while you think.",
+      "## 5. Check the door seals",
+      "A worn gasket leaks cold air all day long. Test it with a sheet of paper, clean the seal with warm soapy water and replace it if it is cracked or soft.",
+      "## 6. Set the right temperature",
+      "Around 3 to 5 degrees Celsius for the fridge and minus 18 for the freezer is right. Setting it colder than needed wastes power and can freeze food. Check with a thermometer instead of trusting the dial.",
+      "## 7. Let hot food cool first",
+      "Putting a hot pot straight into the fridge raises the temperature for everything else. Let it cool a little, cover it and then refrigerate it promptly.",
+      "## 8. Protect against surges",
+      "Summer storms bring spikes and outages. A surge protector with a time delay, designed for fridges, protects the compressor and electronics. Unplug the fridge during a nearby lightning storm if you can.",
+      "## 9. Prepare for power cuts",
+      "Keep frozen water bottles in the freezer, a cooler box ready and a thermometer in the fridge. Do not open the doors during an outage. Our load shedding guide covers this in more detail.",
+      "## 10. Listen and look",
+      "Notice new noises, ice build-up, water on the floor and food spoiling faster. These are early warnings, and small repairs in November are much cheaper than emergency calls on 24 December.",
+      "## For shops and restaurants",
+      ul(
+        "Schedule a service before the festive season. Clean condenser coils and check refrigerant levels, defrost systems and door seals.",
+        "Check that condensing units have shade and airflow, not stacked boxes and kitchen grease.",
+        "Do not overstock display coolers. Air has to circulate.",
+        "Train staff to close doors and keep records of temperatures.",
+        "Have your technician's number ready for peak days."
+      ),
+      "If your fridge or cooler is struggling already, or you want a service before the busy season, call us on 083 538 5106. We service homes and businesses across Durban, Umhlanga, Kloof, Hillcrest and the surrounding area."
+    ],
+  },
+  {
+    slug: "beverage-cooler-not-cooling",
+    title: "Beverage cooler not cooling? Check these before you call",
+    date: "2026-10-27",
+    readMinutes: 6,
+    excerpt:
+      "Glass-door drink coolers are the workhorses of shops and restaurants. When yours warms up, these are the usual causes, easiest first.",
+    image: "/images/blog/cover-beverage-cooler.jpg",
+    imageAlt: "Cover graphic: beverage cooler not cooling, check this",
+    imageFit: "cover",
+    body: [
+      "A glass-door beverage cooler earns its keep every day. It chills your stock, shows your products and brings in impulse sales. When it stops cooling, you lose all three. The good news is that many drink-cooler problems are simple and cheap, and some you can sort out yourself in a few minutes. Work through this list in order, easiest first.",
+      "## 1. Is it actually getting power?",
+      "Check that the plug is in, the socket is working and the switch or breaker has not tripped. Look at the display or the internal light. Extension leads and multi-plugs are common culprits, especially when a cooler shares a socket with other equipment. A cooler needs its own good, properly rated socket.",
+      "## 2. Is the thermostat set correctly?",
+      "Staff, cleaners and customers sometimes bump the dial. Check it is on the setting you expect, and that the controller is not in defrost or standby. A typical drinks setting is around 2 to 5 degrees Celsius.",
+      img(
+        g("cooldrink-fridge.jpg"),
+        "Double glass-door beverage cooler",
+        "Two-door upright coolers hold a lot of stock and are sensitive to blocked airflow and dirty condensers."
+      ),
+      "## 3. Is the condenser clogged?",
+      "This is the most common cause of a cooler that runs all the time and still gets warm. The condenser is the finned coil, usually at the bottom or back, where the system gets rid of heat. Dust, grease and packaging blocks it, and the compressor overheats.",
+      ul(
+        "Switch the cooler off and unplug it.",
+        "Remove the grille at the bottom or back.",
+        "Brush and vacuum the coil gently, going with the fins, not across them.",
+        "Never use a pressure washer on the fins or the electrical parts."
+      ),
+      "Cleaning the condenser every few months is the best prevention. In a dusty or greasy shop, do it monthly.",
+      "## 4. Is the airflow blocked inside?",
+      "Coolers rely on a fan to circulate cold air. If the shelves are packed tight against the back, or boxes cover the air vents, the air cannot move. Leave gaps at the back and the top, do not push cartons against the vents and do not overload the shelves.",
+      "## 5. Is the fan working?",
+      "There are usually two fans: one inside blowing air across the evaporator and one outside cooling the condenser and compressor. If either has stopped, the cooler will warm up. You can often hear or feel them. A fan that is silent, slow or noisy needs replacing.",
+      "## 6. Is the door sealing?",
+      "Check the gasket around the glass door for tears, hardening or dirt. Make sure the door closes fully, and that the self-closing mechanism works. Do not let staff prop the door open during restocking. A door that does not seal also causes condensation on the glass and ice on the evaporator.",
+      "## 7. Is it iced up?",
+      "If the evaporator at the back is covered with ice, the defrost has failed or the cooler is being overloaded with warm stock. Turn it off, empty it into another fridge and let it defrost fully. If ice comes back quickly, the defrost heater, timer or sensor needs checking.",
+      "## 8. Is the room too hot?",
+      "A cooler in direct sun, next to a kitchen or in a tiny stockroom has to work much harder. Check the ambient temperature and move it if you can. Leave space on all sides for ventilation, as the manufacturer recommends.",
+      "## 9. Did you load a lot of warm stock?",
+      "A fresh delivery of warm drinks can take hours to chill. Load in stages, and where possible keep a second cooler or fridge for pre-chilling.",
+      "## When it is time to call a technician",
+      "If you have worked through the list and the cooler still will not cool, the cause is probably one of the following:",
+      ul(
+        "A failing compressor or starting parts.",
+        "A refrigerant leak.",
+        "A faulty controller, sensor or relay.",
+        "A blocked or damaged evaporator.",
+        "A failed defrost heater or timer."
+      ),
+      "These need proper tools and testing. Early help is cheaper, and it protects your stock and your sales.",
+      "## Keep it running",
+      ul(
+        "Clean the condenser every one to three months.",
+        "Check the door gasket weekly and wipe the glass.",
+        "Keep the temperature log and check the display each day.",
+        "Have the cooler serviced at least twice a year, more often in a busy shop.",
+        "Keep your technician's number near the cooler."
+      ),
+      "We repair and service beverage coolers, display fridges and cold rooms for shops, restaurants and bakeries across Durban and the surrounding suburbs. If your cooler is warm, call 083 538 5106 and we will help you work out what to do next."
+    ],
+  },
 ];
