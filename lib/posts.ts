@@ -21,7 +21,7 @@ const g = (file: string) => `/images/gallery/${file}`;
 
 // Headings: a string starting with "## " renders as a section heading.
 // **bold** inside any string renders as bold.
-export const blogPosts: BlogPost[] = [
+const allPosts: BlogPost[] = [
   {
     slug: "signs-your-fridge-compressor-is-failing",
     title: "5 signs your fridge compressor is failing",
@@ -1008,4 +1008,265 @@ export const blogPosts: BlogPost[] = [
       "We repair and service beverage coolers, display fridges and cold rooms for shops, restaurants and bakeries across Durban and the surrounding suburbs. If your cooler is warm, call 083 538 5106 and we will help you work out what to do next."
     ],
   },
+  {
+    slug: "fridge-smells-bad-even-after-cleaning",
+    title: "Fridge smells bad even after cleaning? Here is where the smell hides",
+    date: "2026-09-08",
+    readMinutes: 6,
+    excerpt:
+      "You have wiped every shelf and the smell is still there. The cause is usually somewhere you have not looked yet.",
+    image: "/images/blog/cover-fridge-smell.jpg",
+    imageAlt: "Cover graphic: fridge smells bad even after cleaning",
+    imageFit: "cover",
+    body: [
+      "You have thrown out the old food, wiped the shelves and washed the drawers, and the fridge still smells. It is one of the most irritating household problems, and the reason is simple: the smell is not coming from the places you have cleaned. It is coming from somewhere hidden, or from a fault in the fridge itself. Here is where to look, starting with the most common causes.",
+      "## 1. Forgotten food in a corner",
+      "It sounds obvious, but a leaking packet at the back of a shelf, a bag of vegetables that has liquefied in the crisper or a container behind the milk is the cause more often than anything else. Empty the fridge completely, shelf by shelf, and check every container, including sauces and anything in the door.",
+      "## 2. The defrost drain and drip tray",
+      "Frost-free fridges melt frost into a drain at the back of the fridge or freezer. Food particles and moisture collect in that drain, and in the drip tray under or behind the fridge, and they grow bacteria and mould. The result is a sour, musty smell that no amount of shelf cleaning will remove. Flush the drain hole with warm water and a little bicarbonate of soda using a syringe, and wash the drip tray.",
+      img(
+        g("domestic-fridge.jpg"),
+        "Open side-by-side fridge freezer",
+        "Remove drawers and shelves completely so you can reach the back wall and the drain area."
+      ),
+      "## 3. Mould on the door seals",
+      "The folds of the door gasket are warm, damp and full of food residue, which makes them a perfect place for mould. It leaves a musty smell each time you open the door. Clean the folds with warm soapy water and an old toothbrush, dry them, and check for black spots that do not come off. A seal that stays mouldy or cracked may need replacing, which also fixes cold air leaks.",
+      "## 4. A freezer that thawed and refroze",
+      "After a long power cut, food in the freezer can thaw, leak into the bottom of the cabinet and refreeze. The smell then returns every time the freezer warms up. Empty the freezer, throw out food that has thawed, clean the base and walls and let it air out before restocking. This is very common after load shedding.",
+      "## 5. A saturated or missing filter",
+      "Some fridges have a charcoal or air filter to absorb odours. Over time it stops working. Check your manual to see if yours has one and when it should be replaced.",
+      "## 6. A blocked vent or poor airflow",
+      "When air cannot circulate, moisture condenses on the walls and food spoils sooner. Keep vents clear and avoid overpacking the shelves.",
+      "## 7. Water in the base or behind the panels",
+      "If the drain is blocked for a long time, water can seep behind the liner or into the insulation. The smell then comes from deep inside the fridge. This is harder to fix, and may need a technician to open up the unit and clear the water and the drain.",
+      "## 8. Plastic or electrical smells",
+      "A new fridge can smell of plastic for a few days, and that is normal. A burning or acrid smell is different. It can come from a motor, relay or wiring that is overheating. Unplug the fridge and call a technician.",
+      "## How to remove the smell properly",
+      ul(
+        "Switch off and unplug the fridge. Move food into cooler boxes with ice.",
+        "Remove all shelves, drawers and seals where possible, and wash them in warm water with a little dishwashing liquid.",
+        "Wipe the inside with a mix of bicarbonate of soda and warm water, or a mild mix of white vinegar and water. Avoid strong bleach or harsh chemicals on the plastics and seals.",
+        "Clean the drain hole, the drip tray and the door seals.",
+        "Dry everything thoroughly. Leave the doors open for a few hours to air the fridge.",
+        "Place an open box of bicarbonate of soda or a bowl of activated charcoal inside for a few days to absorb leftover odours.",
+        "Restock with sealed containers and wipe spills straight away."
+      ),
+      "## When to call a technician",
+      "If the smell comes back within days of a deep clean, the fridge is not drying properly, the drain keeps blocking or you can smell something burning, it is time for a professional look. We check the drain, defrost system and seals, and we will tell you plainly whether the smell is a cleaning problem or a fault. We repair household fridges across Durban and the surrounding suburbs."
+    ],
+  },
+  {
+    slug: "fridge-ice-maker-or-water-dispenser-not-working",
+    title: "Fridge ice maker or water dispenser not working? Common causes",
+    date: "2026-09-16",
+    readMinutes: 6,
+    excerpt:
+      "No ice, a slow trickle of water or a dispenser that will not pour. These are the usual causes, from the simple to the stubborn.",
+    image: "/images/blog/cover-ice-water.jpg",
+    imageAlt: "Cover graphic: ice maker or water dispenser not working",
+    imageFit: "cover",
+    body: [
+      "An ice maker and water dispenser are very convenient until they stop working. Then you realise how often you used them. The good news is that most problems come from a short list of causes, and several are easy to fix yourself. The bad news is that these features add water lines, valves and heaters, which is why they are among the most common fridge faults.",
+      "## Start with the basics",
+      ul(
+        "Is the fridge connected to the water supply, and is the tap behind it open?",
+        "Is the ice maker switched on? Many have a wire arm or a switch that must be in the on position.",
+        "Is the freezer cold enough? An ice maker needs the freezer to be around minus 15 degrees Celsius or colder to make ice.",
+        "Is the door fully closed? Dispensers often stop working if the door is not sealed.",
+        "Has the child lock on the dispenser been turned on?"
+      ),
+      "## 1. The water filter is blocked or overdue",
+      "A clogged filter restricts the flow so much that the ice maker and dispenser get only a trickle. This is a very common cause of small, hollow ice cubes and slow water. Most filters need replacing every six months. If yours is overdue, replace it, flush a few litres through and see if the flow returns. Use the correct filter for your model.",
+      img(
+        g("domestic-fridge-1.jpg"),
+        "Bottom-freezer fridge with a door water dispenser",
+        "Water dispensers add a filter, a supply line and a valve, each of which can fail or freeze."
+      ),
+      "## 2. The water line is frozen or kinked",
+      "If the thin supply tube freezes, water cannot reach the ice maker or dispenser. It can freeze when the freezer is set too cold, when the line passes through a cold section or when the supply is low. A kinked line behind the fridge, squashed when the fridge was pushed back, also cuts off the flow. Check behind the fridge for kinks, and make sure the line is not crushed.",
+      "## 3. The water inlet valve has failed",
+      "The inlet valve is an electrically operated valve behind the fridge that opens to let water in. When it fails, no water gets through even if the supply is fine. A failing valve may give a weak flow, make a buzzing noise or not open at all. It needs replacing.",
+      "## 4. Low water pressure",
+      "The valve needs a minimum water pressure to open and fill properly. If your home has low pressure, or the supply tap is only partly open, the flow will be poor. Check that other taps have normal pressure.",
+      "## 5. The ice is stuck or jammed",
+      "Ice cubes can fuse into a solid lump in the bin or the chute, especially if the ice has not been used for a while or the freezer has had temperature swings or power cuts. Remove the bin, empty it, break up or melt the lump and let the system make fresh ice. Check the chute for ice blockages.",
+      "## 6. A faulty ice maker module",
+      "The ice maker module has a heater, a motor and a thermostat that release the cubes and tip them out. When any of these fail, the tray fills but no ice drops, or the ice maker does not cycle at all. The module can be replaced, and it is often more economical than replacing the fridge.",
+      "## 7. A frozen dispenser flap or chute",
+      "The small flap in the ice chute can freeze shut, or the dispenser may jam. A technician can inspect and clear it, and check the small heaters around the chute.",
+      "## 8. A control or sensor fault",
+      "Newer fridges rely on sensors and control boards. If a board or sensor fails, the dispenser or ice maker may stop without any visible reason. Error codes on the display can point to the cause.",
+      "## What to do",
+      ul(
+        "Replace the filter if it is old.",
+        "Check the water supply tap and the line for kinks.",
+        "Check the freezer temperature with a thermometer.",
+        "Clear any stuck ice from the bin and chute.",
+        "Do not use sharp tools to chip ice or force the dispenser.",
+        "Turn off the water supply to the fridge if you see any leaks."
+      ),
+      "When none of that works, the valve, module or control needs testing. We repair household fridges with ice makers and water dispensers across Durban and the surrounding area. Call 083 538 5106 with your fridge brand and model, and we will help you work out what is likely to be wrong."
+    ],
+  },
+  {
+    slug: "cut-restaurant-refrigeration-electricity-costs",
+    title: "Seven ways to cut your restaurant's refrigeration electricity costs",
+    date: "2026-09-22",
+    readMinutes: 6,
+    excerpt:
+      "Refrigeration is one of the biggest power users in a kitchen. These practical changes cost little and reduce the load on your equipment.",
+    image: "/images/blog/cover-energy-costs.jpg",
+    imageAlt: "Cover graphic: cut your restaurant's refrigeration costs",
+    imageFit: "cover",
+    body: [
+      "In most restaurants, bakeries and shops, refrigeration runs 24 hours a day, every day, and it is one of the largest items on the electricity bill. With tariffs rising and load shedding forcing many businesses onto generators or inverters, every unit of power counts. The good news is that most refrigeration savings do not need new equipment. They come from keeping the equipment you have in good condition and using it sensibly.",
+      "## 1. Keep the condensers clean",
+      "A condenser coil clogged with dust, grease or leaves cannot get rid of heat. The compressor then runs longer, hotter and at higher pressure, using more power and wearing out sooner. Cleaning the coil is the single most effective step, and it is especially important in kitchens, where grease collects fast. Clean them every one to three months depending on the environment.",
+      img(
+        g("commercial-fridge.jpg"),
+        "Open display refrigerator in a shop",
+        "Display cabinets and cold rooms both depend on clean condensers and good airflow to run efficiently."
+      ),
+      "## 2. Fix door seals and close the doors",
+      "A leaking gasket lets warm air in all day, and the system has to remove that heat again. Check the seals on every door, replace worn ones and train staff to close doors fully. Strip curtains on walk-in rooms reduce the loss when the door is open for deliveries and busy periods.",
+      "## 3. Do not put hot food into the cold room",
+      "Hot food adds a large heat and moisture load. Let it cool a little, spread it out in shallow trays and cover it before it goes in. Consider a blast chiller if you cook large volumes.",
+      "## 4. Set the right temperatures",
+      "Colder than necessary wastes power. Most chillers work well at 2 to 5 degrees Celsius and freezers at minus 18, subject to your food safety requirements. Check with a thermometer that the display is accurate, and avoid setting a cooler colder just to be safe.",
+      "## 5. Keep the airflow clear",
+      "Stock stacked against the evaporator, boxes covering vents and overpacked shelves reduce air circulation, so the system runs longer and the temperature is uneven. Leave space around the evaporator and keep stock off the floor.",
+      "## 6. Check the defrost and the controls",
+      "A defrost cycle that runs too often wastes power, and one that does not run enough causes ice that chokes the airflow. A technician can check the settings, the heater and the sensors. Make sure lights are off when nobody is in the cold room, and consider LED lighting, which gives off less heat than older bulbs.",
+      "## 7. Service the equipment regularly",
+      "A system with the correct refrigerant charge, clean coils, healthy fans and working controls uses noticeably less power than a neglected one, and it breaks down less often. Regular maintenance usually pays for itself through lower bills and fewer emergency repairs.",
+      "## Other things worth checking",
+      ul(
+        "Is the condensing unit in a shaded, ventilated spot, away from kitchen exhausts and direct sun?",
+        "Are any old, half-empty fridges running for little reason? Consolidate if you can.",
+        "Are display coolers fully stocked at night, and are night covers or doors used where possible?",
+        "If you use an inverter or generator during load shedding, is it sized for compressor start-up surges?",
+        "Do you record your electricity use so that you can see changes after repairs and servicing?"
+      ),
+      "## When replacement makes sense",
+      "If a cooler or freezer is very old, or uses an old, inefficient design, a modern unit can cost far less to run. A technician can help you weigh the running cost against the purchase cost, and tell you honestly whether repair is the better choice.",
+      "We service and repair commercial refrigeration for restaurants, bakeries and shops across Durban and the surrounding suburbs. If you would like us to look at your cold room or display fridges and point out where power is being wasted, call us on 083 538 5106."
+    ],
+  },
+  {
+    slug: "after-a-storm-or-power-surge-check-your-fridge",
+    title: "After a storm or power surge: how to check your fridge and freezer",
+    date: "2026-09-28",
+    readMinutes: 6,
+    excerpt:
+      "Lightning and surges damage fridge electronics and compressors, often without any obvious sign. What to check and when to call.",
+    image: "/images/blog/cover-storm-surge.jpg",
+    imageAlt: "Cover graphic: storm hit the power, check your fridge",
+    imageFit: "cover",
+    body: [
+      "Durban's summer storms bring lightning, sudden power cuts and a surge when the supply returns. Fridges and freezers are among the appliances most often damaged, because they run all day and are rarely switched off. Sometimes the damage is obvious, like a dead display, but often it is not. A compressor can be weakened, a control board can be damaged and the fridge keeps running for a while before it fails.",
+      "## Check the power first",
+      ul(
+        "Look at the plug, the socket and the lead for scorch marks, melted plastic or a burning smell. If you find any, do not use the socket and have an electrician check it.",
+        "Check the trip switches and the main board. A fridge on a tripped circuit looks dead but is not damaged.",
+        "Check the fridge display or lights. A blank display, flashing lights or an error code may mean a damaged control board.",
+        "Check that the settings have not reset. After an outage, some fridges reset to default temperatures or turn on an alarm."
+      ),
+      img(
+        g("cooldrink-fridge.jpg"),
+        "Glass-door beverage cooler",
+        "Appliances with electronic controls and displays are the most sensitive to surges."
+      ),
+      "## Give the compressor a rest",
+      "When the power returns, a fridge compressor can be asked to restart while the pressure in the system is still high, which makes it struggle or trip. Many modern fridges have a built-in delay, but older ones do not. If the fridge has been off, give it five to ten minutes after the power is stable before it restarts. If you hear it clicking without starting, switch it off and wait before trying again. Repeated starts stress the motor.",
+      "## Check the temperatures",
+      "Put a thermometer in the fridge and the freezer and check them over the next few hours. A fridge should be around 3 to 5 degrees Celsius, and a freezer minus 18. If the temperature is rising, or the compressor runs constantly without cooling, there may be damage.",
+      "## Signs of surge damage",
+      ul(
+        "The fridge does not start at all, or the display is blank.",
+        "The compressor runs but the fridge does not get cold.",
+        "The fridge keeps clicking, tripping or resetting.",
+        "Fans, lights or the dispenser stop working while the rest does.",
+        "Error codes appear on the display.",
+        "A burning smell or hot spots around the back of the fridge."
+      ),
+      "## Food safety after an outage",
+      "Keep the doors closed during the outage. A closed fridge keeps food cold for around four hours, and a full freezer for much longer. After that, discard perishable food that has been above 5 degrees Celsius for more than four hours. Frozen food with ice crystals can generally be kept. When in doubt, throw it out.",
+      "## How to protect your fridge next time",
+      ul(
+        "Use a surge protector with a time delay, made for fridges and freezers.",
+        "Unplug the fridge during a nearby lightning storm if you can do so safely.",
+        "Make sure the plug and socket are in good condition and the wiring is earthed.",
+        "Keep a thermometer in the fridge so that you notice problems early.",
+        "Check your home or business insurance to see what is covered for surge damage, and keep records and photos if you need to claim."
+      ),
+      "## For businesses",
+      "If a cold room or display cooler is affected, record the temperatures and the time, move stock to working equipment and keep notes for your insurer. A technician should check the electrical protection, contactors and controller before you restart a large system.",
+      "If your fridge is behaving oddly after a storm, call us on 083 538 5106. We test the electrical parts and the compressor on-site across Durban and the surrounding area, and tell you honestly what was damaged and what it will take to fix."
+    ],
+  },
+  {
+    slug: "moving-house-with-a-fridge",
+    title: "Moving house with a fridge: how to move it without damaging it",
+    date: "2026-10-08",
+    readMinutes: 5,
+    excerpt:
+      "Fridges can be damaged by moving them the wrong way. How to prepare, how to transport and how long to wait before switching on.",
+    image: "/images/blog/cover-moving-fridge.jpg",
+    imageAlt: "Cover graphic: moving with a fridge, do this first",
+    imageFit: "cover",
+    body: [
+      "Moving house is stressful enough without arriving to find your fridge will not cool. Fridges are heavy, awkward and surprisingly delicate, and a few small mistakes during a move can cause damage that only shows up days later. The good news is that moving a fridge safely is easy if you follow a few rules.",
+      "## Before moving day",
+      ul(
+        "Empty the fridge and freezer, and plan to use up or pack the food. Perishables travel in a cooler with ice.",
+        "Switch the fridge off and unplug it 24 hours before the move. This gives it time to defrost.",
+        "Place towels or a tray to catch the meltwater, and empty the drip tray.",
+        "Remove or tape down loose shelves, drawers and bins so that they do not break.",
+        "Clean the inside while it is empty, and leave the doors open so it dries and does not develop a musty smell.",
+        "If the fridge has a water line or ice maker, turn off the water and disconnect the line carefully."
+      ),
+      img(
+        g("domestic-fridge.jpg"),
+        "Empty side-by-side fridge freezer ready to move",
+        "An empty, defrosted fridge with the shelves secured is far easier and safer to move."
+      ),
+      "## Moving it safely",
+      ul(
+        "Secure the doors with tape or a strap so they do not swing open. Do not use tape directly on the finish if it can mark it.",
+        "Use a trolley or dolly with straps, and have at least two people.",
+        "Keep the fridge upright whenever possible. This keeps the compressor oil where it belongs.",
+        "Wrap the cabinet with blankets to protect it from scratches and dents.",
+        "Strap it firmly in the vehicle so that it cannot tip or slide.",
+        "Never carry it by the doors or handles."
+      ),
+      "## What if it has to lie down?",
+      "Sometimes there is no choice, such as in a small van or a narrow staircase. If a fridge has been tilted or laid down, the compressor oil can run into the cooling system. If it is switched on straight away, it can block the system or damage the compressor. If you have to lay it down, lay it on its side (not on its back or front) and make a note of how long it was laid down.",
+      "## How long to wait before switching on",
+      "This is the question we hear most often. As a rule of thumb:",
+      ul(
+        "If the fridge travelled upright: wait around one to four hours so that the oil and refrigerant settle.",
+        "If it was laid down or tilted heavily: wait 12 to 24 hours before switching on.",
+        "Always check the manual. Some manufacturers give different guidance."
+      ),
+      "Waiting costs nothing, and it protects the compressor. Use the time to level the fridge and clean the area.",
+      "## Setting up in the new home",
+      ul(
+        "Place the fridge on a level floor, and adjust the feet so the doors close properly.",
+        "Leave a gap of several centimetres at the back and sides for airflow, and keep it away from ovens and direct sun.",
+        "Plug it directly into a wall socket, not an extension lead, and ideally through a surge protector.",
+        "Reconnect the water line carefully and check for leaks.",
+        "Switch it on, set the temperature and wait several hours before loading it with food.",
+        "Check the temperature with a thermometer after a few hours."
+      ),
+      "## Chest freezers and commercial units",
+      "The same rules apply to chest freezers, display coolers and under-counter units. Commercial equipment is heavier and often needs a professional mover or a technician, particularly if it is hard-wired or part of a split system.",
+      "## When something goes wrong",
+      "If the fridge does not cool after you have waited and set it up, hums but stays warm, or makes a new noise, something may have moved in transit. Switch it off and call a technician. We repair household fridges and freezers on-site across Durban and the surrounding suburbs, and we are happy to check a fridge after a move. Call 083 538 5106."
+    ],
+  },
 ];
+
+// Oldest first; the blog index and teasers read newest from the end.
+export const blogPosts: BlogPost[] = [...allPosts].sort((a, b) =>
+  a.date.localeCompare(b.date)
+);
