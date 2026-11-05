@@ -1282,9 +1282,9 @@ const allPosts: BlogPost[] = [
       "## 2. The condenser coil is clogged with dust",
       "The coil at the back or underneath the fridge is where heat leaves the system. When it is covered in dust and pet hair, the heat cannot escape, the compressor overheats and the cabinet stops cooling properly. In Durban's humidity that dust turns into a sticky film that is harder to clear than it looks. Switch the fridge off, vacuum the coil gently and check that there are a few centimetres of space around the unit.",
       img(
-        g("domestic-fridge.jpg"),
-        "Side-by-side fridge freezer with doors open",
-        "A fridge that is crammed against the wall or tucked into a cupboard cannot shed heat, and the cooling suffers."
+        "/images/blog/photo-light-on.jpg",
+        "Hand holding a thermometer inside a fridge with food on the shelves",
+        "Put a thermometer on the middle shelf. A working fridge sits at around 3 to 5 degrees."
       ),
       "## 3. The evaporator fan has stopped",
       "On frost-free fridges, a small fan inside the freezer pushes cold air into the fridge section. If that fan fails, the freezer can stay quite cold while the fridge warms up, because the cold air has nowhere to go. You may hear a rattle or a squeal before it stops, or hear nothing at all where there used to be a soft whoosh.",
@@ -1333,9 +1333,9 @@ const allPosts: BlogPost[] = [
       "## 3. The freezer thawed and then refroze its own ice",
       "If a lot of ice melted and then refroze around the evaporator, it can block the airflow or the drain. The freezer is running, but the cold air cannot circulate. Switching it off and defrosting it completely, with the door open and towels on the floor, often fixes this. If the ice comes back, the defrost system needs attention.",
       img(
-        g("Freezer.jpg"),
-        "Upright freezer with drawers",
-        "Do not chip at ice with a knife. Switch the freezer off and let it defrost naturally to avoid puncturing the pipes."
+        "/images/blog/photo-freezer-outage.jpg",
+        "Open freezer with thawing food and a puddle on the floor after a power cut",
+        "Keep the door shut during an outage. Every opening lets the cold out."
       ),
       "## 4. Something simple was knocked",
       "During a power cut people open the freezer to check on things, and the door does not always close properly afterwards. A door left ajar by a few millimetres will stop a freezer from ever getting cold. Check the door seals, the drawers and the shelves to make sure nothing is holding the door open.",
@@ -1381,9 +1381,9 @@ const allPosts: BlogPost[] = [
       "## 2. Poor ventilation",
       "A fridge squeezed into a tight cupboard, pushed hard against the wall or sitting beside an oven or in direct sun has to fight its surroundings. Leave a gap of several centimetres at the back and sides, and keep it away from heat sources.",
       img(
-        g("domestic-fridge-1.jpg"),
-        "Bottom-freezer fridge with a water dispenser",
-        "Space at the back and sides lets the fridge shed heat. A boxed-in fridge runs hotter and longer."
+        "/images/blog/photo-runs-constantly.jpg",
+        "Technician cleaning the dusty condenser coil at the back of a fridge",
+        "A dusty condenser coil is the most common reason a fridge runs too long, and cleaning it is the cheapest fix."
       ),
       "## 3. Worn door seals",
       "If the rubber gasket is cracked, dirty or no longer sticks to the cabinet, warm air leaks in constantly. The fridge keeps trying to cool air that never stays cold. Try the paper test: if a sheet slides out easily, the seal is leaking.",
@@ -1429,9 +1429,9 @@ const allPosts: BlogPost[] = [
       "## The evaporator fan has stopped",
       "A small fan behind the freezer panel moves the cold air. When it fails, you may notice a squealing or rattling first, and then nothing. The freezer stays cold, the fridge warms up. The fan is a common, inexpensive part to replace.",
       img(
-        g("domestic-fridge.jpg"),
-        "Fridge freezer with doors open",
-        "In a frost-free fridge, all the cold air for the fridge section comes through a small fan and a damper."
+        "/images/blog/photo-defy-iced.jpg",
+        "Fridge freezer with thick ice on the back wall of the freezer compartment",
+        "A thick block of ice at the back of the freezer usually means the defrost system has failed."
       ),
       "## The air damper or the thermostat is stuck",
       "A damper controls how much cold air enters the fridge section. If it sticks closed, the fridge never gets any. A faulty thermostat or sensor can do the same thing by telling the system the fridge is already cold.",
@@ -1482,9 +1482,9 @@ const allPosts: BlogPost[] = [
       "## The refrigerant",
       "Fridges use different refrigerants, and the system must be recharged with the right one. Some are flammable and need specific equipment and training to handle safely. Availability and price of the gas also vary.",
       img(
-        g("commercial-fridge.jpg"),
-        "Commercial upright refrigerator",
-        "Commercial compressors and refrigerant charges are larger, which is why a commercial repair usually costs more than a household one."
+        "/images/blog/photo-compressor-cost.jpg",
+        "Refrigeration technician working on the compressor at the back of a fridge with a gauge set",
+        "Replacing a compressor means recovering the gas, brazing, vacuuming and recharging, so it needs proper equipment."
       ),
       "## Parts availability",
       "Compressors for popular household brands are usually easy to source. Older or less common models can mean waiting for a part or using an equivalent compressor. Genuine, quality compressors cost more than cheap imports, and the cheaper ones often fail sooner.",
