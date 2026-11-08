@@ -729,8 +729,14 @@ const allPosts: BlogPost[] = [
         "Side-by-side fridge freezer with doors open",
         "Larger, feature-rich fridges often have more parts that can fail, and the parts cost more."
       ),
-      "## Broad cost bands (not prices)",
-      "Instead of rand figures, think in bands. Prices change, and every brand and model is different.",
+      "## What our repairs cost",
+      "Here are our actual figures. Every brand and model is different, so we diagnose the fault first and confirm the cost before any work starts.",
+      ul(
+        "**Call-out:** from R250, depending on your area.",
+        "**Minor repairs:** typically R350 to R950.",
+        "**Major repairs:** from R1,250."
+      ),
+      "## Which faults fall where",
       ul(
         "**Low:** door seals, thermostats, start relays, fans, defrost heaters, drain blockages and temperature sensors. These are the most common faults and usually the cheapest.",
         "**Medium:** control boards, water inlet valves, damper assemblies and some electronic components.",
@@ -1437,6 +1443,14 @@ const allPosts: BlogPost[] = [
       "A damper controls how much cold air enters the fridge section. If it sticks closed, the fridge never gets any. A faulty thermostat or sensor can do the same thing by telling the system the fridge is already cold.",
       "## If it is a direct-cool Defy",
       "On direct-cool models the cause is usually different. A thick layer of ice on the freezer plate acts as insulation, so the cold never reaches the fridge plate properly. Defrosting the freezer fully, and then switching it back on, often brings the fridge back to life. If it does not, look for a failing thermostat, a poorly sealing door or a dirty condenser coil. Older units can also be losing refrigerant through a slow leak.",
+      "## What we see most on Defy fridges",
+      "From the Defy fridges we repair in Durban, the faults we meet most often are compressor problems, failed evaporator fan motors, failed condenser fan motors and internal gas leaks. A failed evaporator fan is exactly what causes a warm fridge with a working freezer.",
+      "One warning: if a Defy has an internal gas leak, a regas does not repair the problem permanently. The gas escapes again. The leak needs to be found and fixed, or the fridge is at the end of its life, and an honest technician will tell you which.",
+      img(
+        "/images/jobs/defy-fridge.jpg",
+        "Defy fridge freezer with an electronic control panel in a kitchen",
+        "A Defy fridge freezer we attended in Durban."
+      ),
       "## Things you can safely try",
       ul(
         "Check that the fridge dial or display has not been moved to a warmer setting.",
@@ -1502,6 +1516,8 @@ const allPosts: BlogPost[] = [
         "Is it a small or very cheap model? For a low-cost bar fridge, replacement is often the better option."
       ),
       "A useful rule of thumb is that if the repair costs more than around half the price of a comparable new fridge, it is time to think hard about replacing it. That is a guide, not a law, and it shifts with the age and quality of the unit.",
+      "## What our repairs start from",
+      "We diagnose first and give you the figures before work starts. Our call-out fees start from R250 and depend on your area. Minor repairs typically cost between R350 and R950. Major repairs start from R1,250. A compressor replacement is a sealed-system job, so it falls in the major repair range, and the final figure depends on the unit, the compressor and the refrigerant.",
       "## How to get a fair quote",
       ul(
         "Ask for the diagnosis in plain terms, and what was tested.",
@@ -1512,6 +1528,491 @@ const allPosts: BlogPost[] = [
       ),
       "## Talk to us",
       "We give a written quote after diagnosing the fault, and we will tell you plainly if replacing the fridge makes more sense than repairing it. We have been repairing household and commercial refrigeration in Durban since 2004. Call us with your fridge's make, model and age, and we will tell you what to expect.",
+    ],
+  },
+  {
+    slug: "chest-freezer-not-working-but-the-light-is-on",
+    title: "Chest freezer not working but the light is on? What to check",
+    date: "2026-11-07",
+    readMinutes: 6,
+    excerpt:
+      "The light only proves the freezer has power. Here are the usual reasons a chest freezer stays warm, and which checks are safe to do yourself.",
+    image: "/images/blog/cover-chest-freezer.jpg",
+    imageAlt: "Cover graphic: chest freezer not working but the light is on",
+    imageFit: "cover",
+    body: [
+      "A chest freezer with a light that comes on but food that is slowly thawing is a common call for us. The light and the cooling system are separate. The light proves the freezer has power, nothing more. The part that makes the cold is the compressor, a sealed system of pipes, a thermostat and, on some models, a fan.",
+      "Because chest freezers are often kept in garages, outbuildings and back rooms, they get dusty, hot and ignored. Here is what usually goes wrong and what to do.",
+      "## 1. The thermostat is set wrong or has failed",
+      "Check the dial first. A knob nudged to the lowest setting, or one that has worn out, stops the compressor from running. Turn it to the coldest setting and listen. If the compressor still does not start, the thermostat or the starting parts may have failed.",
+      "## 2. The compressor is not starting",
+      "Stand next to the freezer and listen. A healthy compressor hums, then settles. A click every few minutes followed by silence usually means the start relay or overload protector is worn. These are small, inexpensive parts, and the fix is often quick. If the compressor itself has failed, a technician needs to confirm it.",
+      img(
+        "/images/jobs/start-relay.jpg",
+        "Technician holding a fridge start relay with wires attached",
+        "A worn start relay is a common cause of a freezer that clicks and does not start."
+      ),
+      "## 3. The condenser is clogged with dust",
+      "A chest freezer sheds heat through a coil in its walls or at the back. In a hot garage, with dust and cobwebs on the coil or the freezer hard against a wall, it cannot shed heat and stops cooling properly. Pull it a few centimetres from the wall and clean any exposed coil.",
+      "## 4. The lid seal is leaking",
+      "A perished or dirty lid seal lets warm, humid air in. You see frost building up around the rim and the freezer runs constantly without catching up. Close the lid on a sheet of paper. If it slides out easily, the seal needs attention.",
+      "## 5. There is a gas leak or a blockage",
+      "If the compressor runs but the freezer never gets cold, the sealed system may be losing gas or may be blocked. A regas without finding the leak does not repair the problem permanently, because the gas escapes again. This is a job for a technician, not a store-bought kit.",
+      "## What you can safely check",
+      ul(
+        "Make sure the freezer is plugged in and the socket works. Test it with a lamp.",
+        "Check the thermostat dial setting.",
+        "Listen for the compressor starting and for any clicking.",
+        "Feel the back or sides. Warm is normal. Hot is not.",
+        "Clean the dust off any exposed coil with the freezer switched off at the wall.",
+        "Check that the lid closes properly and the seal is clean."
+      ),
+      "## What to do with the food",
+      "If the freezer has stopped, keep the lid closed. A full chest freezer holds its cold for a day or two. Food that still has ice crystals can generally be refrozen. Meat, fish, dairy and cooked meals that have been warm for more than about two hours should be thrown away.",
+      "## What a repair costs",
+      "We diagnose the fault first. Call-out fees start from R250 and depend on your area. Minor repairs, such as a thermostat or a start relay, typically cost between R350 and R950. Major repairs start from R1,250. We will tell you honestly if the freezer is not worth repairing.",
+      "Call us with the make, the age and what you can hear, and we will tell you the likely cause before we come out. We repair chest and upright freezers across Durban.",
+    ],
+  },
+  {
+    slug: "double-door-fridge-not-cooling-at-the-bottom",
+    title: "Double-door fridge not cooling at the bottom: why and what to do",
+    date: "2026-11-07",
+    readMinutes: 6,
+    excerpt:
+      "When the top of a double-door or side-by-side fridge is cold but the bottom is warm, the fault is usually airflow or defrost. Here is how to tell.",
+    image: "/images/blog/cover-double-door.jpg",
+    imageAlt: "Cover graphic: double-door fridge not cooling at the bottom",
+    imageFit: "cover",
+    body: [
+      "A double-door fridge with a warm bottom section and a cold top, or a warm fridge side with a working freezer side, is a very common call. People assume the whole fridge has failed, but the fact that part of it is still cold tells us something useful. The compressor is probably running. The cold is simply not reaching the warm part.",
+      "## How cold air gets around a frost-free fridge",
+      "Most double-door, side-by-side and French door fridges are frost-free. They make their cold in the freezer, at a coil called the evaporator, and a small fan pushes that cold air through ducts into the fridge section. A damper controls how much goes where. If any part of that chain fails, one section stays cold and the other warms up.",
+      "## The usual causes",
+      "## 1. The evaporator is iced over",
+      "The evaporator is melted clear of frost on a regular cycle by a defrost heater, a timer or board and a sensor. When one of those parts fails, ice builds up and blocks the airflow. The freezer, which sits next to the coil, may still feel cold. The fridge starves.",
+      img(
+        "/images/jobs/side-by-side-interior.jpg",
+        "Empty interior of a side-by-side fridge with shelves and door bins",
+        "In a side-by-side fridge, all the cold for the fridge side comes from the freezer through ducts and a fan."
+      ),
+      "## 2. The evaporator fan has failed",
+      "If the fan stops, the cold air stays where it is made. You may have noticed a rattle or squeal before it stopped. A failed fan motor is a common repair and is usually worth doing.",
+      "## 3. The air damper or sensor is stuck",
+      "A damper controls the cold air going into the fridge section. If it sticks shut, the fridge never gets any. A temperature sensor that reads wrongly can have the same effect.",
+      "## 4. The vents are blocked",
+      "Food packed against the vents, or a container stuck to the air duct, blocks the cold air. Move items away from the vents and give the fridge an hour to settle.",
+      "## 5. The door seal is leaking",
+      "A perished seal lets warm air in at the bottom, where the door meets the cabinet, and the lower section runs warm. Close the door on a sheet of paper. If it slides out, the seal is not doing its job.",
+      "## What to check first",
+      ul(
+        "Check the temperature setting has not been changed.",
+        "Clear the vents so air can circulate.",
+        "Look at the back wall of the freezer for a layer of ice.",
+        "Listen for the fan inside the freezer. Silence where there used to be a soft whoosh is a clue.",
+        "Test the door seals with a sheet of paper."
+      ),
+      "## What not to do",
+      "Do not chip ice with a knife or use a heat gun. The pipes in the back wall are thin and a puncture ends the life of the fridge. Defrost by switching off and leaving the doors open with towels on the floor, then call us if the ice returns.",
+      "## What it costs",
+      "Call-out fees start from R250 and depend on your area. A fan, a sensor or a defrost part usually falls in our minor repair range of R350 to R950. Major repairs start from R1,250. We diagnose first, so you know the fault and the cost before we start.",
+      "We repair side-by-side, French door and double-door fridges of every brand across Durban. Call us with the make, the model and what you are seeing.",
+    ],
+  },
+  {
+    slug: "freezer-ice-build-up-and-how-to-defrost-properly",
+    title: "Freezer ice build-up: what causes it and how to defrost properly",
+    date: "2026-11-07",
+    readMinutes: 6,
+    excerpt:
+      "A thick layer of ice in the freezer is a warning, not just a nuisance. Here is what causes it, how to defrost safely and when the ice will keep coming back.",
+    image: "/images/blog/cover-ice-buildup.jpg",
+    imageAlt: "Cover graphic: freezer ice build-up and how to defrost properly",
+    imageFit: "cover",
+    body: [
+      "A bit of frost in a freezer is normal. A thick layer of ice on the walls, the shelves or the back panel is not. Ice insulates, blocks airflow and makes the freezer work harder, and in a frost-free fridge it is often the first sign that the defrost system has failed.",
+      "## Why ice builds up",
+      "## 1. The door or lid seal is leaking",
+      "Warm, humid air enters every time the seal fails, and the moisture freezes on the coldest surface. In Durban's humidity this happens quickly. Check the seal with a sheet of paper.",
+      "## 2. The door is opened too often or left ajar",
+      "Every opening adds moisture. A drawer or a bag of food holding the door a few millimetres open will ice up the freezer within days.",
+      "## 3. The defrost system has failed (frost-free freezers)",
+      "A frost-free freezer melts its evaporator clear of ice on a regular cycle, using a heater, a timer or board and a sensor. When any of these fails, ice builds on the coil and blocks the fan. You will often see a solid block of ice at the back of the freezer, and the fridge section warming up.",
+      img(
+        "/images/jobs/evaporator-ice.jpg",
+        "Ice and frost on the evaporator tray in a fridge",
+        "Ice around the evaporator blocks the airflow and stops the fridge section from cooling."
+      ),
+      "## 4. The drain is blocked",
+      "Melted ice drains away through a small pipe. If it blocks, the water pools and refreezes at the bottom, or leaks into the fridge. This is why some fridges leak water at the same time as icing up.",
+      "## How to defrost safely",
+      ul(
+        "Switch the freezer off at the wall and empty it into a cooler or another freezer.",
+        "Leave the doors or lid open. Put towels on the floor and a tray under the freezer.",
+        "Let the ice melt naturally. Do not chip at it with a knife, screwdriver or ice pick. The pipes behind the walls are thin and a puncture usually ends the life of the freezer.",
+        "Do not use a hairdryer or a heat gun on a high setting. Heat can damage the plastic and the sensors. A bowl of warm water placed inside can help speed things up.",
+        "Dry the inside completely, clean the seal, and switch the freezer back on.",
+        "Give it several hours to reach temperature before loading the food again."
+      ),
+      "## When the ice keeps coming back",
+      "If the ice returns within days or weeks, the cause has not been fixed. On frost-free models it points to the defrost heater, sensor or board. On direct-cool models it points to the seal, the door or the habit of opening it. A technician can test the defrost parts and replace the faulty one.",
+      "## What it costs",
+      "Call-out fees start from R250 and depend on your area. A defrost sensor, heater or fan repair typically falls within our minor repair range of R350 to R950. Major repairs start from R1,250. We diagnose the fault first so you know the cost before work starts.",
+      "We repair household and commercial freezers across Durban. Call us if your freezer keeps icing up and we will find out why.",
+    ],
+  },
+  {
+    slug: "fridge-fan-motor-not-working",
+    title: "Fridge fan motor not working: signs, causes and repair",
+    date: "2026-11-07",
+    readMinutes: 5,
+    excerpt:
+      "A fridge has two fans that matter, and a failure in either one causes very different symptoms. Here is how to tell which one has gone.",
+    image: "/images/blog/cover-fan-motor.jpg",
+    imageAlt: "Cover graphic: fridge fan motor not working",
+    imageFit: "cover",
+    body: [
+      "Fans are among the most common parts to fail in a fridge or freezer, because they run for years inside a cold, damp space. A fridge has two fans that matter, and the symptoms of each are different. Knowing which one has failed tells you a lot before anyone opens the cabinet.",
+      "## The evaporator fan",
+      "This fan sits inside the freezer, behind a panel, and pushes cold air from the evaporator into the fridge and freezer sections. When it stops, the air stops moving. You get a freezer that may still be cold and a fridge that warms up, often with ice forming on the coil.",
+      "Signs of a failing evaporator fan:",
+      ul(
+        "A squeal, rattle or whirring noise from the freezer that then stops.",
+        "A fridge that is warm while the freezer is still cold.",
+        "Ice on the back wall of the freezer.",
+        "The fan not turning when you hold the door switch in."
+      ),
+      img(
+        "/images/jobs/evaporator-fan.jpg",
+        "Cold room evaporator unit with a large fan on a white housing",
+        "In a cold room, a failed evaporator fan stops cold air circulating and the room warms up."
+      ),
+      "## The condenser fan",
+      "On many fridges, particularly larger and commercial units, a second fan blows air over the condenser coil and the compressor to carry heat away. If it fails, the compressor overheats, the unit runs constantly and cooling gets worse and worse. You may notice the compressor area being hot, the fridge running non-stop and then tripping out on overload.",
+      "Signs of a failing condenser fan:",
+      ul(
+        "The back of the fridge or the compressor area is very hot.",
+        "The fridge runs all the time but struggles to cool.",
+        "The compressor switches off and on repeatedly.",
+        "A fan that is not turning, or turning slowly, near the compressor."
+      ),
+      "## Why fans fail",
+      ul(
+        "Bearings wear out and seize.",
+        "Ice on the evaporator touches the blades, bending them or stopping the motor.",
+        "Dust and grease collect on the blades and the motor.",
+        "Moisture gets into the motor winding.",
+        "An electrical or control fault stops the fan getting power."
+      ),
+      "## Is a new fan worth it?",
+      "Almost always, yes. A fan motor is one of the more affordable repairs, and replacing it prevents the compressor from taking the damage. We see evaporator and condenser fan motor failures regularly, particularly on Defy fridges.",
+      "## What it costs",
+      "Call-out fees start from R250 and depend on your area. A fan motor replacement typically falls within our minor repair range of R350 to R950. Major repairs start from R1,250. We will tell you exactly what is wrong and what it costs before we start.",
+      "If your fridge is warm and the freezer is cold, or the back is very hot, call us with the make and model. We carry common fan motors and can usually replace them on site.",
+    ],
+  },
+  {
+    slug: "bar-fridge-not-cooling",
+    title: "Bar fridge not cooling: what is worth fixing and what is not",
+    date: "2026-11-07",
+    readMinutes: 5,
+    excerpt:
+      "Bar fridges are cheap to replace and sometimes expensive to repair. Here is how to tell whether yours is worth fixing.",
+    image: "/images/blog/cover-bar-fridge.jpg",
+    imageAlt: "Cover graphic: bar fridge not cooling",
+    imageFit: "cover",
+    body: [
+      "A bar fridge is a small fridge that does a big job in a bar, a garage, a lounge or a flat. When it stops cooling, the first question is always whether it is worth repairing. That depends on the fault, the age of the fridge and what a replacement would cost.",
+      "## Check these first",
+      ul(
+        "Is it plugged in, and does the socket work? Test it with a lamp.",
+        "Has the thermostat dial been moved? Turn it up to the coldest setting.",
+        "Is the fridge in a hot spot, in direct sun or against a heat source?",
+        "Is there space of a few centimetres at the back and sides for air?",
+        "Is the door closing and sealing properly?"
+      ),
+      "## Common causes",
+      "## A thermostat that has failed",
+      "A bar fridge thermostat is inexpensive and a quick repair. If the fridge hums but the cabinet never gets cold, or it never switches on, the thermostat is a likely culprit.",
+      "## A start relay or overload",
+      "A fridge that clicks and does not start, or starts and stops, usually has a worn start relay or overload protector. These are cheap parts and the fridge is otherwise fine.",
+      "## A dirty condenser",
+      "Dust blocks the coil and stops the fridge getting rid of heat. Cleaning it is free, if you do it yourself.",
+      img(
+        "/images/jobs/bar-fridge.jpg",
+        "Three-door glass bar fridge under a bar counter",
+        "A back-bar fridge in a busy bar works hard in a warm space."
+      ),
+      "## A leaking door seal",
+      "A bar fridge that is opened constantly wears its seals quickly. If the seal is perished, it lets warm air in and the fridge cannot keep up.",
+      "## A gas leak or a failed compressor",
+      "If the compressor runs but the cabinet stays warm, the sealed system may be losing gas, or the compressor may have failed. These are the expensive faults. On a cheap bar fridge, they often cost more than the fridge is worth.",
+      "## Repair or replace?",
+      ul(
+        "A thermostat, relay, fan or seal is usually worth repairing.",
+        "A gas leak or a failed compressor on a small, cheap, old bar fridge is often not worth it.",
+        "On a larger, good-quality bar or display fridge, even a compressor can be worth replacing.",
+        "If the repair costs more than around half of a comparable new fridge, think hard before you spend it."
+      ),
+      "## What it costs",
+      "We diagnose first and tell you the fault and the cost before we start. Call-out fees start from R250 and depend on your area. Minor repairs typically cost between R350 and R950. Major repairs start from R1,250. If your fridge is not worth repairing, we will tell you so, and we also buy and sell used fridges.",
+      "We repair bar fridges, bottle coolers and beverage coolers for homes and businesses across Durban. Call us with the make and what the fridge is doing.",
+    ],
+  },
+  {
+    slug: "fridge-thermostat-problems-and-replacement",
+    title: "Fridge thermostat problems: signs, testing and replacement",
+    date: "2026-11-08",
+    readMinutes: 6,
+    excerpt:
+      "The thermostat tells the compressor when to run. When it fails, a fridge can freeze food, never cool or run non-stop. Here is how to recognise it.",
+    image: "/images/blog/cover-thermostat.jpg",
+    imageAlt: "Cover graphic: fridge thermostat problems and replacement",
+    imageFit: "cover",
+    body: [
+      "The thermostat is a small part with a big job. It senses the temperature inside the fridge and tells the compressor when to start and stop. When it fails, the symptoms can look like a failed compressor, which is why it is worth knowing the difference.",
+      "## Two kinds of thermostat",
+      "Many older and simpler fridges, chest freezers and cold rooms use a mechanical thermostat: a dial connected to a sensing tube or capillary. Newer fridges use an electronic sensor and a control board. The fault signs are similar, but the repair is different.",
+      img(
+        "/images/jobs/thermostat-dial.jpg",
+        "Fridge thermostat dial inside a fridge compartment",
+        "A mechanical thermostat dial inside a fridge. The numbers are settings, not temperatures."
+      ),
+      "## Signs of a failing thermostat",
+      ul(
+        "The fridge never switches on, though the light works.",
+        "The fridge runs non-stop and gets too cold, freezing milk and lettuce.",
+        "The fridge cycles on and off at odd intervals.",
+        "The temperature is wrong even when the dial is changed.",
+        "The dial turns but nothing clicks."
+      ),
+      "## Before you blame the thermostat",
+      "Several other faults look like a bad thermostat. A start relay that has worn out, a blocked evaporator and a dirty condenser all cause cooling problems. A technician tests the thermostat with a meter and by bypassing it to see whether the compressor runs, before deciding.",
+      img(
+        "/images/jobs/thermostat-coldroom-2.jpg",
+        "Cold room thermostat mounted on a wall with a sensing tube",
+        "Cold rooms use a thermostat or controller on the wall. The sensing tube has to sit in the right spot."
+      ),
+      "## Can I replace it myself?",
+      "A mechanical thermostat is a simple part, but it sits inside the cabinet and is wired to the compressor circuit. Mistakes cause electrical faults, and a sensing tube that is bent or put in the wrong place gives wrong readings. Switch off at the wall before touching anything, and call a technician if you are not sure.",
+      "## Thermostats on cold rooms and commercial units",
+      "Commercial fridges, display units and cold rooms use thermostats or electronic temperature controllers. If a controller fails, the compressor may not run, or it may not stop. Replacing a controller is a regular call-out for us and is often a quick job.",
+      "## What it costs",
+      "Call-out fees start from R250 and depend on your area. A thermostat replacement usually falls within our minor repair range of R350 to R950. Major repairs start from R1,250. We diagnose first, so you know the fault and the cost before we start.",
+      "We replace thermostats and controllers on household and commercial fridges, freezers and cold rooms across Durban. Call us with the make and what the fridge is doing.",
+    ],
+  },
+  {
+    slug: "fridge-gas-refill-why-it-is-not-a-permanent-fix",
+    title: "Fridge gas refill: why a regas is not a permanent fix",
+    date: "2026-11-08",
+    readMinutes: 6,
+    excerpt:
+      "A fridge is a sealed system, so it should never need topping up. If someone offers to regas it, find out where the gas went first.",
+    image: "/images/blog/cover-gas-refill.jpg",
+    imageAlt: "Cover graphic: fridge gas refill is not a permanent fix",
+    imageFit: "cover",
+    body: [
+      "Search for fridge repairs and you will see kits and offers to regas your fridge. It sounds like a quick, cheap fix. In most cases, it is not a repair at all. A fridge is a sealed system, and the gas inside is not used up. If the gas level is low, it has leaked out through a hole somewhere, and putting more in does not close the hole.",
+      "## How a fridge uses refrigerant",
+      "The refrigerant circulates in a closed loop of pipes: compressor, condenser, a restriction and the evaporator. It changes from gas to liquid and back as it carries heat out of the cabinet. It does not burn off or evaporate away. Done right, a fridge keeps its gas for its whole life.",
+      "## Why a regas does not last",
+      "When a fridge has lost its gas, there is a leak. The usual places are corroded tubing, a joint or the evaporator. Add gas without fixing the leak and the fridge may cool for a few days or weeks, and then fail again as the gas escapes. Defy and KIC fridges in particular often have internal gas leaks, and a regas on these does not repair the problem permanently.",
+      img(
+        "/images/jobs/gas-and-tools.jpg",
+        "Refrigerant gas cylinder, copper pipe, gauges and tools in the back of a service vehicle",
+        "Proper gas work needs the right gas, pipe, gauges and a leak test. Our vehicle is stocked with gas, pipe and gauges."
+      ),
+      "## What a proper repair involves",
+      ul(
+        "Finding the leak with a leak detector or a pressure test.",
+        "Repairing or replacing the leaking part, where it is possible.",
+        "Replacing the filter drier, which should never be reused.",
+        "Pulling a vacuum to remove air and moisture from the system.",
+        "Charging the exact weight of the correct refrigerant.",
+        "Testing that the fridge cools and holds temperature."
+      ),
+      "## Why DIY gas kits are a bad idea",
+      ul(
+        "Many modern fridges use a flammable refrigerant, which is dangerous in untrained hands.",
+        "The wrong gas or the wrong amount damages the compressor.",
+        "A kit does not remove air or moisture, so the system is contaminated.",
+        "It does not find or fix the leak."
+      ),
+      "## When a regas does make sense",
+      "A regas is a normal part of a proper repair, after the leak is fixed and the system is evacuated. It is not a stand-alone fix. If the leak is in the evaporator or inside the walls of the cabinet, it may not be repairable at all, and the honest answer is that the fridge is at the end of its life.",
+      "## How do I know my fridge has a gas problem?",
+      ul(
+        "The compressor runs but the cabinet never gets cold.",
+        "The evaporator is partly frosted, with the top cold and the rest warm.",
+        "The fridge cools for a while after a repair, then stops again.",
+        "There is an oily residue near joints or pipe connections."
+      ),
+      "## What it costs",
+      "We diagnose first and tell you what is wrong. Call-out fees start from R250 and depend on your area. Minor repairs typically cost between R350 and R950. Major repairs start from R1,250. If a leak makes the fridge not worth repairing, we will say so before you spend any money.",
+      "Call us with the make and age of your fridge and we will tell you what to expect.",
+    ],
+  },
+  {
+    slug: "fridge-door-seal-replacement",
+    title: "Fridge door seal replacement: how to test yours and when to replace it",
+    date: "2026-11-08",
+    readMinutes: 5,
+    excerpt:
+      "A worn door seal lets warm air in, makes the fridge run constantly and adds to your electricity bill. Here is how to test it and what replacing it involves.",
+    image: "/images/blog/cover-door-seal.jpg",
+    imageAlt: "Cover graphic: fridge door seal replacement",
+    imageFit: "cover",
+    body: [
+      "The rubber seal around a fridge door is easy to ignore, and it is one of the most common reasons a fridge runs constantly, ices up or cannot hold temperature. A seal that no longer closes tightly lets warm, humid air in, which the fridge then has to cool again and again.",
+      "## Signs the seal is failing",
+      ul(
+        "Condensation or water on the outside edge of the door.",
+        "Frost or ice forming near the door in the freezer.",
+        "The fridge running for much longer than it used to.",
+        "A door that does not stay closed by itself, or swings open slightly.",
+        "A rubber that is cracked, hard, torn or mouldy.",
+        "A food shelf near the door that is warmer than the rest."
+      ),
+      "## The paper test",
+      "Close the door on a sheet of paper so that half sticks out. Pull the paper. It should hold firmly. If it slides out easily, the seal is not doing its job at that point. Repeat all the way round the door, particularly the corners and the bottom, where seals usually fail first.",
+      "## Can a seal be cleaned or fixed?",
+      "Sometimes. A seal that is dirty or sticky from spilt food may seal again after a wash with warm soapy water. A seal that has gone hard or slightly warped may recover if you soften it with warm water, or you can seat it properly. A seal that is cracked, torn or perished needs replacing.",
+      img(
+        "/images/jobs/undercounter-fridge.jpg",
+        "Stainless steel under-counter glass-door fridge with door seals",
+        "Seals on commercial fridges wear out faster because the doors are opened all day."
+      ),
+      "## What replacing a seal involves",
+      ul(
+        "Getting the correct seal for the make and model, which is not always a standard size.",
+        "Removing the old seal, which may be clipped or slotted into a channel.",
+        "Fitting the new seal evenly and warming it so that it sits flat.",
+        "Checking the door alignment and the hinges, since a sagging door can also stop it sealing."
+      ),
+      "## Why it matters",
+      ul(
+        "A leaking seal can make the fridge run for much longer, which adds to your electricity bill.",
+        "Ice builds up inside because warm air brings moisture in.",
+        "Food does not keep as well.",
+        "The compressor works harder and wears out sooner."
+      ),
+      "## Commercial fridges and display units",
+      "On shop and bar fridges the doors open and close all day, so the seals wear fast. A new seal is a small cost compared with the extra power and the risk of warm stock. We replace seals on display fridges, bottle coolers and cold rooms regularly.",
+      "## What it costs",
+      "Call-out fees start from R250 and depend on your area. A seal replacement is usually a minor repair, which typically costs between R350 and R950 depending on the unit and the seal. Major repairs start from R1,250. We will tell you the cost before we start.",
+      "Call us with the make and model of your fridge and we will tell you what to expect.",
+    ],
+  },
+  {
+    slug: "display-fridge-not-cooling",
+    title: "Display fridge not cooling in your shop: what to check first",
+    date: "2026-11-08",
+    readMinutes: 6,
+    excerpt:
+      "A warm display fridge means lost sales and lost stock. Here is what to check in the first few minutes and when to call a technician.",
+    image: "/images/blog/cover-display-fridge.jpg",
+    imageAlt: "Cover graphic: display fridge not cooling",
+    imageFit: "cover",
+    body: [
+      "A display fridge is the product in a shop, a petrol-station store or a spaza. When it stops cooling, cold drinks, dairy and meat are at risk, and customers notice. The first few minutes matter. This is what to check and what to do.",
+      img(
+        "/images/jobs/display-fridge-drinks.jpg",
+        "Double-door glass display fridge full of cold drinks",
+        "A display fridge works hard: the doors open all day and the lights are always on."
+      ),
+      "## First checks",
+      ul(
+        "Is it plugged in and is the socket working? Test it with another device.",
+        "Has the breaker tripped, or is there a power problem in the shop?",
+        "Is the controller or thermostat set to the right temperature?",
+        "Are the doors closing fully? A door ajar warms the whole cabinet.",
+        "Is the stock blocking the air vents inside? Do not stack products against the back wall.",
+        "Is the condenser at the bottom or back dusty or blocked?"
+      ),
+      "## Common causes",
+      "## A dirty condenser",
+      "Display fridges sit in warm shops, often against a wall, and their condensers collect dust, grease and cobwebs. When the condenser cannot shed heat, the compressor overheats and cooling drops. Cleaning the coil, with the fridge switched off, is the single most useful job you can do.",
+      "## A failed fan",
+      "There are fans on the evaporator and the condenser. If either stops, cold air stops circulating or heat stops leaving. You may hear that something has gone quiet.",
+      "## A leaking door seal",
+      "Doors on a display fridge open dozens of times an hour, so seals wear. A leak lets warm, humid air in constantly.",
+      "## A faulty controller or thermostat",
+      "Many display fridges have an electronic controller that shows the temperature. If it shows a wrong reading, the compressor may not run when it should. Replacing a controller is a common repair.",
+      img(
+        "/images/jobs/controller.jpg",
+        "Digital temperature controller showing a reading on a commercial fridge",
+        "A digital controller shows the cabinet temperature. A wrong reading can stop the compressor running."
+      ),
+      "## A compressor or a gas problem",
+      "If the compressor runs but the cabinet never cools, the sealed system may be low on gas, or the compressor may be failing. These need a technician.",
+      "## Protect your stock",
+      ul(
+        "Move dairy, meat and other perishable stock to a working fridge or a cooler with ice.",
+        "Keep the doors shut while you wait.",
+        "Do not keep switching it off and on.",
+        "Take note of the temperature and how long it has been warm."
+      ),
+      "## What it costs",
+      "Call-out fees start from R250 and depend on your area. Minor repairs, such as a controller, a fan or a seal, typically cost between R350 and R950. Major repairs start from R1,250. We diagnose first and tell you the fault and the cost before we start.",
+      "We repair display fridges, cold drink coolers and shop freezers across Durban. Call us with your suburb and what the fridge is doing, and we will arrange the earliest visit.",
+    ],
+  },
+  {
+    slug: "walk-in-freezer-vs-cold-room",
+    title: "Walk-in freezer vs cold room: which does your business need?",
+    date: "2026-11-08",
+    readMinutes: 6,
+    excerpt:
+      "A cold room and a freezer room are built differently and used for different things. Here is how to choose, and what to look at before you buy or build.",
+    image: "/images/blog/cover-walk-in.jpg",
+    imageAlt: "Cover graphic: walk-in freezer versus cold room",
+    imageFit: "cover",
+    body: [
+      "Both a cold room and a freezer room are walk-in refrigerated spaces, but they do different jobs. Choosing the wrong one, or building the wrong size, is an expensive mistake. Here is how they differ.",
+      "## A cold room (chiller)",
+      "A cold room keeps food cold but not frozen, usually a few degrees above zero. It is used for fresh produce, dairy, drinks, prepared food and meat that will be used soon. It is the right choice if your stock turns over quickly and you need to keep it fresh.",
+      "## A freezer room",
+      "A freezer room keeps food frozen, typically around minus 18 degrees or colder. It is used for frozen meat, fish, ice cream and bulk stock that needs to last weeks or months. Freezer rooms use thicker insulation and a stronger refrigeration system, and need a defrost system for the evaporator.",
+      "## Main differences",
+      ul(
+        "Temperature: a cold room runs above freezing, a freezer room well below.",
+        "Insulation: a freezer room needs thicker panels to hold the cold.",
+        "Refrigeration: a freezer room needs a larger, lower-temperature system, which costs more.",
+        "Defrosting: both need defrosting, but a freezer room evaporator ices up much faster.",
+        "Running cost: a freezer room generally costs more to run."
+      ),
+      img(
+        "/images/jobs/evaporator-twin-fan.jpg",
+        "Twin-fan evaporator unit inside a cold room",
+        "The evaporator inside the room does the cooling. In a freezer room it has to defrost regularly."
+      ),
+      "## Which do you need?",
+      ul(
+        "Restaurants and caterers: usually a cold room, often with a freezer chest or a small freezer room.",
+        "Bakeries: a cold room for dairy and fillings, plus freezers for dough.",
+        "Butcheries: a cold room for hanging and display stock, and a freezer room for bulk.",
+        "Retail and wholesale: depends on the stock. Frozen products need a freezer room."
+      ),
+      "## What to check before you buy or build",
+      ul(
+        "The size, based on your stock and your peak, not your average.",
+        "The temperature range you need, now and in the future.",
+        "The room and its location. Cold rooms need ventilation around the condensing unit.",
+        "The panels and the door, since a poor door seal makes everything work harder.",
+        "The refrigeration system and who will service it.",
+        "Whether the supplier will maintain it after installation."
+      ),
+      img(
+        "/images/jobs/condensing-unit-wall.jpg",
+        "Wall-mounted condensing unit outside a cold room",
+        "The condensing unit sits outside the room and needs space and airflow around it."
+      ),
+      "## Keep it running",
+      "Both types fail the same ways: a dirty condenser, a failed fan, a controller fault or a refrigerant leak. Regular maintenance, including coil cleaning, gas pressure checks, electrical tests and controller calibration, catches most of these early. We cover this in our scheduled maintenance.",
+      "## What it costs",
+      "Cold room and freezer room installations are quoted individually, because every space is different. For repairs and service work, call-out fees start from R250 and depend on your area. Minor repairs typically cost between R350 and R950. Major repairs start from R1,250.",
+      "We build, repair and service cold rooms and freezer rooms across Durban. Call us with the size of the space and what you store, and we will advise you honestly.",
     ],
   },
 ];

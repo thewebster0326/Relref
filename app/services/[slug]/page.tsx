@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import TagList from "@/components/TagList";
 import { services, site, areas, landingServiceSlugs } from "@/lib/content";
+import { brandPages, industryPages } from "@/lib/pages";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -97,6 +98,50 @@ export default async function ServicePage({
                     <TagList items={extra.items} />
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {service.slug === "domestic-repairs" && (
+        <section className="border-t border-line">
+          <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">By brand</p>
+            <h2 className="mt-2.5 font-display text-2xl font-semibold sm:text-3xl">
+              Fridge repairs by brand
+            </h2>
+            <div className="mt-6 flex flex-wrap gap-2.5">
+              {brandPages.map((b) => (
+                <Link
+                  key={b.slug}
+                  href={`/brands/${b.slug}`}
+                  className="rounded-full border border-line px-4 py-2 font-mono text-xs text-mist transition-colors hover:border-ice hover:text-ice"
+                >
+                  {b.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {service.slug === "commercial-refrigeration" && (
+        <section className="border-t border-line">
+          <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-ice">By business</p>
+            <h2 className="mt-2.5 font-display text-2xl font-semibold sm:text-3xl">
+              Refrigeration repairs by type of business
+            </h2>
+            <div className="mt-6 flex flex-wrap gap-2.5">
+              {industryPages.map((i) => (
+                <Link
+                  key={i.slug}
+                  href={`/industries/${i.slug}`}
+                  className="rounded-full border border-line px-4 py-2 font-mono text-xs text-mist transition-colors hover:border-ice hover:text-ice"
+                >
+                  {i.name}
+                </Link>
               ))}
             </div>
           </div>

@@ -25,6 +25,8 @@ export default function Footer() {
           <nav className="mt-4 flex flex-col gap-2.5 text-sm text-mist">
             <Link href="/about" className="hover:text-frost">About</Link>
             <Link href="/services" className="hover:text-frost">Services</Link>
+            <Link href="/brands" className="hover:text-frost">Brands we repair</Link>
+            <Link href="/industries" className="hover:text-frost">For business</Link>
             <Link href="/blog" className="hover:text-frost">Blog</Link>
             <Link href="/contact" className="hover:text-frost">Contact</Link>
           </nav>

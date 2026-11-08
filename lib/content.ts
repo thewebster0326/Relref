@@ -40,15 +40,14 @@ export const areas: AreaProfile[] = [
   { slug: "westville", name: "Westville", region: "the Outer West", neighborSlugs: ["pinetown", "kloof"] },
   { slug: "pinetown", name: "Pinetown", region: "the Outer West", neighborSlugs: ["westville", "queensburgh"] , includes: ["Cowies Hill"] },
   { slug: "queensburgh", name: "Queensburgh", region: "the south-west", neighborSlugs: ["malvern", "pinetown"] , includes: ["Escombe"] },
-  { slug: "malvern", name: "Malvern", region: "the south-west", neighborSlugs: ["queensburgh", "chatsworth"] },
+  { slug: "malvern", name: "Malvern", region: "the south-west", neighborSlugs: ["queensburgh", "pinetown"] },
   { slug: "berea", name: "Berea", region: "central Durban", neighborSlugs: ["glenwood", "durban"] },
   { slug: "glenwood", name: "Glenwood", region: "central Durban", neighborSlugs: ["berea", "sherwood"] },
-  { slug: "bluff", name: "Bluff", region: "the Bluff", neighborSlugs: ["montclair", "chatsworth"] },
-  { slug: "chatsworth", name: "Chatsworth", region: "the south-west", neighborSlugs: ["malvern", "bluff"] },
+  { slug: "bluff", name: "Bluff", region: "the Bluff", neighborSlugs: ["montclair", "bellair"] },
   { slug: "mount-edgecombe", name: "Mount Edgecombe", region: "northern Durban", neighborSlugs: ["durban-north", "umhlanga"] },
   { slug: "reservoir-hills", name: "Reservoir Hills", region: "central Durban", neighborSlugs: ["sherwood", "durban-north"] },
   { slug: "sherwood", name: "Sherwood", region: "central Durban", neighborSlugs: ["glenwood", "reservoir-hills"] },
-  { slug: "montclair", name: "Montclair", region: "the Bluff", neighborSlugs: ["bluff", "chatsworth"] },
+  { slug: "montclair", name: "Montclair", region: "the Bluff", neighborSlugs: ["bluff", "bellair"] },
   { slug: "newlands-east", name: "Newlands East", region: "north-west Durban", neighborSlugs: ["newlands-west", "reservoir-hills"], includes: ["Avoca Hills"] },
   { slug: "newlands-west", name: "Newlands West", region: "north-west Durban", neighborSlugs: ["newlands-east", "springfield"] },
   { slug: "springfield", name: "Springfield", region: "northern Durban", neighborSlugs: ["newlands-west", "durban-north"] },
@@ -58,7 +57,7 @@ export const areas: AreaProfile[] = [
 export const serviceAreas = areas.map((a) => a.name);
 
 // The 3 highest-search-volume services get a dedicated landing page per
-// area (3 services x 22 areas = 66 pages). Maintenance and Sales stay as
+// area (3 services x 21 areas = 63 pages). Maintenance and Sales stay as
 // single service pages only.
 export const landingServiceSlugs = [
   "domestic-repairs",
@@ -117,6 +116,17 @@ export const services: Service[] = [
           "AEG",
           "Whirlpool",
           "Kelvinator",
+          "Haier",
+          "Liebherr",
+          "National",
+          "Beko",
+          "Midea",
+          "Univa",
+          "Snomaster",
+          "Fridgemaster",
+          "Fridge Star",
+          "Husky",
+          "Staycold",
           "Side-by-side & French door fridges",
           "Upright & chest freezers",
         ],
@@ -257,7 +267,17 @@ export const faqs: Faq[] = [
   {
     question: "Do you repair all fridge brands?",
     answer:
-      "Yes. We repair most major domestic and commercial refrigeration brands, including Samsung, LG, Defy, KIC, Hisense, Bosch, AEG and many others.",
+      "Yes. We repair most major domestic and commercial refrigeration brands, including Samsung, LG, Defy, KIC, Hisense, Bosch, AEG, Whirlpool, Haier, Liebherr, Beko, Midea, Univa, Snomaster, Fridgemaster, Fridge Star, Husky, Staycold and many others.",
+  },
+  {
+    question: "How much does a call-out cost?",
+    answer:
+      "Call-out fees start from R250 and depend on your area. Call us with your suburb and we will confirm the fee before we come out.",
+  },
+  {
+    question: "How much does a fridge repair cost?",
+    answer:
+      "Minor repairs typically cost between R350 and R950. Major repairs start from R1,250. We diagnose the fault first and give you a clear quote before any work starts.",
   },
   {
     question: "Do you provide commercial refrigeration repairs?",

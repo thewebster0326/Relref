@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { services, areas, landingServiceSlugs, blogPosts } from "@/lib/content";
+import { brandPages, industryPages } from "@/lib/pages";
 
 export const dynamic = "force-static";
 
@@ -27,5 +28,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.date),
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...landingRoutes, ...blogRoutes];
+  const brandRoutes = ["/brands", ...brandPages.map((b) => `/brands/${b.slug}`)].map((path) => ({
+    url: `${baseUrl}${path}/`,
+  }));
+
+  const industryRoutes = [
+    "/industries",
+    ...industryPages.map((i) => `/industries/${i.slug}`),
+  ].map((path) => ({
+    url: `${baseUrl}${path}/`,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...serviceRoutes,
+    ...landingRoutes,
+    ...brandRoutes,
+    ...industryRoutes,
+    ...blogRoutes,
+  ];
 }
