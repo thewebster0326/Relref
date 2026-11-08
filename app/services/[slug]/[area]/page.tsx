@@ -6,9 +6,13 @@ import TagList from "@/components/TagList";
 import { services, areas, landingServiceSlugs, site } from "@/lib/content";
 import { areaBySlug, neighborsOf, landingIntro } from "@/lib/landingCopy";
 
+// Areas we no longer serve. The pages were already published, so they stay
+// as redirects to the service page instead of returning an error.
+const retiredAreas = ["chatsworth"];
+
 export function generateStaticParams() {
   return landingServiceSlugs.flatMap((slug) =>
-    areas.map((area) => ({ slug, area: area.slug }))
+    [...areas.map((a) => a.slug), ...retiredAreas].map((area) => ({ slug, area }))
   );
 }
 
@@ -26,6 +30,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string; area: string }>;
 }): Promise<Metadata> {
   const { slug, area: areaSlug } = await params;
+  if (retiredAreas.includes(areaSlug)) return { robots: { index: false } };
   const data = getData(slug, areaSlug);
   if (!data) return {};
   const { service, area } = data;
@@ -41,6 +46,19 @@ export default async function AreaLandingPage({
   params: Promise<{ slug: string; area: string }>;
 }) {
   const { slug, area: areaSlug } = await params;
+  if (retiredAreas.includes(areaSlug)) {
+    return (
+      <section className="mx-auto max-w-3xl px-5 py-24 sm:px-8">
+        <meta httpEquiv="refresh" content={`0; url=/services/${slug}/`} />
+        <h1 className="font-display text-3xl font-bold">This page has moved</h1>
+        <p className="mt-4 text-mist">
+          <Link href={`/services/${slug}`} className="text-ice hover:text-frost">
+            Go to the service page &rarr;
+          </Link>
+        </p>
+      </section>
+    );
+  }
   const data = getData(slug, areaSlug);
   if (!data) notFound();
   const { service, area } = data;
